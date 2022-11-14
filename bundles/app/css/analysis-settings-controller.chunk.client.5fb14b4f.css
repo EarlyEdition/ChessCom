@@ -1,0 +1,452 @@
+.modal-container-component {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    transition: opacity .3s ease;
+    width: 100vw;
+    z-index: 9999
+}
+
+.modal-container-parent-centered {
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%
+}
+
+.modal-container-bg {
+    background-color: rgba(0,0,0,.65);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1
+}
+
+.modal-container-enter,.modal-container-leave {
+    opacity: 0
+}
+
+@media (min-width: 960px) {
+    .modal-container-content-centered {
+        justify-content:start
+    }
+}
+
+.modal-content-component {
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.5);
+    margin: 1rem;
+    overflow: hidden
+}
+
+.modal-content-component.modal-content-dark-light {
+    background-color: var(--globalBackgroundOpaque)
+}
+
+@media (min-width: 960px) {
+    .modal-content-component {
+        margin-left:0;
+        margin-right: 0
+    }
+}
+
+.settings-analysis-component {
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%
+}
+
+.settings-analysis-component header,.settings-analysis-component ul.settings-analysis-settings {
+    padding: 0 1.5rem
+}
+
+.dark-mode .settings-analysis-component header,.dark-mode .settings-analysis-component ul.settings-analysis-settings {
+    color: #dad8d6
+}
+
+.settings-analysis-settings {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0
+}
+
+.settings-analysis-runbutton {
+    margin: 1rem auto
+}
+
+.settings-analysis-setting {
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem 0
+}
+
+.settings-analysis-setting.settings-analysis-classifications {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1.5rem
+}
+
+.settings-analysis-setting .settings-analysis-inline {
+    align-items: center;
+    display: flex;
+    padding-top: .5rem
+}
+
+.dark-mode .settings-analysis-setting .settings-analysis-inline {
+    color: #e7e6e5
+}
+
+.settings-analysis-message {
+    background: #52b1dc;
+    color: #fff;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: .5rem 1.5rem
+}
+
+.settings-analysis-disabled {
+    cursor: not-allowed;
+    pointer-events: none
+}
+
+.settings-analysis-inline,.settings-analysis-select {
+    width: 60%
+}
+
+.settings-analysis-label {
+    color: #26211b;
+    padding-top: .5rem
+}
+
+.dark-mode .settings-analysis-label {
+    color: #bebdb9
+}
+
+.settings-field-row {
+    display: flex;
+    margin-bottom: 1.5rem;
+    min-height: 3rem;
+    position: relative
+}
+
+.settings-field-row .settings-field-label {
+    color: #312e2b;
+    font-weight: 400;
+    height: 3rem;
+    min-width: 17.5rem
+}
+
+.dark-mode .settings-field-row .settings-field-label {
+    color: #dad8d6
+}
+
+.settings-field-row .settings-field-label .settings-field-icon {
+    font-size: 2rem;
+    line-height: .5;
+    position: relative;
+    top: .1rem
+}
+
+.settings-board-component {
+    margin: 0;
+    padding: 1rem;
+    width: 100%
+}
+
+.settings-board-field {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .6rem 1.5rem
+}
+
+.settings-board-field .ui_v5-select-component,.settings-board-field>label {
+    width: 50%
+}
+
+.icon-toggle-icon {
+    cursor: pointer;
+    transition: all .25s ease
+}
+
+.icon-toggle-icon span {
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem
+}
+
+.icon-toggle-icon.icon-toggle-off {
+    opacity: .4
+}
+
+.icon-toggle-icon.icon-toggle-off:hover {
+    opacity: .8
+}
+
+.details-row-bold {
+    font-weight: 600
+}
+
+.details-row-header,header.details-row-component {
+    color: #8b8987;
+    display: flex;
+    font-weight: 300;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    text-transform: uppercase
+}
+
+.dark-mode .details-row-header,.dark-mode header.details-row-component {
+    color: hsla(0,0%,100%,.4)
+}
+
+.details-row-inactive {
+    opacity: .2;
+    pointer-events: none
+}
+
+.details-row-scrollable {
+    overflow: auto
+}
+
+.details-row-component,.details-row-data {
+    display: flex;
+    justify-content: space-between
+}
+
+.details-row-component {
+    padding-right: 0;
+    position: relative
+}
+
+.details-row-data {
+    align-items: flex-end
+}
+
+.details-row-icon {
+    line-height: 1.3rem;
+    vertical-align: text-bottom
+}
+
+.details-row-lock {
+    justify-content: flex-end
+}
+
+.details-row-toggle {
+    position: absolute;
+    right: -1rem;
+    width: 2rem!important
+}
+
+.details-row-value {
+    margin: 0 1rem;
+    text-align: right;
+    transition: opacity .15s ease;
+    width: 6rem
+}
+
+.details-row-value.details-row-hidden {
+    opacity: 0
+}
+
+.wide-values .row-value {
+    width: 7.3rem
+}
+
+.settings-ui-component {
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%
+}
+
+.settings-ui-component .details-row-icon {
+    margin-right: .5rem
+}
+
+.settings-ui-component .details-row-value {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    width: 10rem
+}
+
+.settings-ui-setting.settings-ui-classifications {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1.5rem
+}
+
+.settings-ui-setting.settings-ui-bar-modes {
+    display: block
+}
+
+.settings-ui-setting .settings-ui-bar-mode-heading {
+    display: flex;
+    justify-content: space-between
+}
+
+.settings-ui-setting .settings-ui-bar-option {
+    padding: .6rem 0 0 1.5rem
+}
+
+.settings-ui-disabled {
+    cursor: not-allowed;
+    pointer-events: none
+}
+
+.settings-ui-player {
+    align-items: center;
+    color: #26211b;
+    display: flex;
+    margin-bottom: .5rem
+}
+
+.dark-mode .settings-ui-player {
+    color: #e7e6e5
+}
+
+.settings-ui-player>:first-child {
+    margin-right: .5rem
+}
+
+.settings-ui-row {
+    width: 100%
+}
+
+.settings-ui-select {
+    width: 60%
+}
+
+.settings-ui-setting {
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem 1.5rem
+}
+
+.settings-ui-label {
+    color: #262421;
+    padding-top: .5rem
+}
+
+.dark-mode .settings-ui-label {
+    color: #dad8d6
+}
+
+.settings-view-modal {
+    max-width: 100%;
+    min-height: 51rem;
+    overflow: visible;
+    position: relative;
+    width: 45rem
+}
+
+.settings-view-modal header {
+    color: #262421;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.settings-view-modal ul {
+    padding-left: 0
+}
+
+.settings-view-close {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    right: -3.5rem;
+    top: 0;
+    width: 3.5rem
+}
+
+.settings-view-tabs {
+    align-items: center;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    display: flex;
+    font-weight: 600;
+    justify-content: space-between;
+    overflow: hidden
+}
+
+.settings-view-tab {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0;
+    min-height: 5rem;
+    padding: .3rem .3rem .8rem;
+    position: relative
+}
+
+.settings-view-tab:not(.settings-view-active) {
+    background-color: #f1f1f1
+}
+
+.settings-view-tab:not(.settings-view-active),.settings-view-tab:not(.settings-view-active) .settings-view-icon,.settings-view-tab:not(.settings-view-active) .settings-view-label {
+    color: #8b8987
+}
+
+.settings-view-tab.settings-view-active {
+    background-color: #fff
+}
+
+.settings-view-tab.settings-view-active,.settings-view-tab.settings-view-active .settings-view-icon,.settings-view-tab.settings-view-active .settings-view-label {
+    color: #666564
+}
+
+.dark-mode .settings-view-tab:not(.settings-view-active) {
+    background-color: #312e2b
+}
+
+.dark-mode .settings-view-tab:not(.settings-view-active),.dark-mode .settings-view-tab:not(.settings-view-active) .settings-view-icon,.dark-mode .settings-view-tab:not(.settings-view-active) .settings-view-label {
+    color: #8b8987
+}
+
+.dark-mode .settings-view-tab.settings-view-active {
+    background-color: #262421
+}
+
+.dark-mode .settings-view-tab.settings-view-active,.dark-mode .settings-view-tab.settings-view-active .settings-view-icon,.dark-mode .settings-view-tab.settings-view-active .settings-view-label {
+    color: #e7e6e5
+}
+
+.settings-view-icon {
+    font-size: 2.8rem;
+    height: 2.8rem;
+    width: 2.8rem
+}
+
+.settings-view-label {
+    color: #8b8987;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    margin-top: .2rem;
+    text-align: center;
+    word-break: break-word
+}
+

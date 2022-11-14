@@ -1,0 +1,705 @@
+.move-san-component.move-san-highlighted .move-san-highlight {
+    position: relative;
+    z-index: 1
+}
+
+.move-san-component.move-san-highlighted .move-san-highlight:after {
+    background-color: #fff35f;
+    border-radius: .2rem;
+    content: "";
+    display: block;
+    height: calc(100% + .4rem);
+    left: -.2rem;
+    position: absolute;
+    top: -.2rem;
+    width: calc(100% + .4rem);
+    z-index: -1
+}
+
+.move-san-component.move-san-highlighted .move-san-highlight:before {
+    background-color: #f8e500;
+    bottom: -.2rem;
+    content: "";
+    display: block;
+    height: .3rem;
+    left: -.2rem;
+    position: absolute;
+    width: calc(100% + .4rem)
+}
+
+.dark-mode .move-san-component.move-san-highlighted .move-san-highlight:after {
+    background-color: hsla(0,0%,100%,.1);
+    box-shadow: 0 0 0 0 hsla(0,0%,100%,.8)
+}
+
+.dark-mode .move-san-component.move-san-highlighted .move-san-highlight:before {
+    background: none;
+    background: hsla(0,0%,80%,.1)
+}
+
+.move-san-premove {
+    margin-right: .1rem
+}
+
+.move-san-postmove {
+    margin-left: calc(var(--moveSanPostmovePinch, 0)*-1);
+    order: 4
+}
+
+.move-san-figurine {
+    --moveSanFigurineFontSize: 2rem;
+    font-size: var(--moveSanFigurineFontSize);
+    margin-right: .15rem;
+    margin-top: calc(var(--moveSanFigurineFontSize)/-10)
+}
+
+.move-san-figurine.move-san-trailing {
+    order: 2
+}
+
+.move-san-figurine+.move-san-san {
+    margin-left: calc(var(--moveSanFigurinePinch, 0)*-1)
+}
+
+.move-san-san {
+    order: 1
+}
+
+.move-san-afterfigurine {
+    order: 3
+}
+
+.score-text-score {
+    align-items: center;
+    background-color: #fff;
+    border-radius: .3rem;
+    color: #312e2b;
+    display: inline-flex;
+    font-weight: 700;
+    justify-content: center;
+    margin-right: .4rem;
+    padding: .1rem .5rem;
+    vertical-align: middle;
+    width: 4.5rem
+}
+
+.score-text-score.score-text-negative {
+    background-color: #312e2b;
+    color: #fff
+}
+
+.game-preview-component {
+    background-size: 100% 100%;
+    position: relative
+}
+
+.game-preview-piece {
+    position: absolute
+}
+
+.game-preview-icon-wrapper {
+    align-items: center;
+    background-color: hsla(0,0%,100%,.85);
+    border-radius: 100%;
+    display: flex;
+    height: 6.5rem;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: 49.5%;
+    transform: translate(-50%,-50%);
+    width: 6.5rem;
+    z-index: 15
+}
+
+.game-preview-icon {
+    color: #a7a6a2;
+    font-size: 4.8rem;
+    height: 4.8rem;
+    width: 4.8rem
+}
+
+.game-preview-chess960-title {
+    color: #fff;
+    font-size: 15vw;
+    font-weight: 700;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+    z-index: 15
+}
+
+@media (min-width: 480px) {
+    .game-preview-chess960-title {
+        font-size:8rem
+    }
+}
+
+@media (min-width: 960px) {
+    .game-preview-chess960-title {
+        font-size:10rem
+    }
+}
+
+.engine-line-component {
+    --moveSanFigurineFontSize: 2rem;
+    --moveSanFigurinePinch: 0.3rem;
+    border-top: .1rem solid var(--globalBorder);
+    font-size: 1.3rem;
+    min-height: 2.6rem;
+    overflow: hidden;
+    padding: .2rem 0;
+    position: relative;
+    text-indent: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
+.engine-line-component.engine-line-withicon {
+    padding-right: 1.8rem
+}
+
+.engine-line-component:after {
+    content: "";
+    display: block
+}
+
+.engine-line-component:first-child {
+    border-top: none
+}
+
+.engine-line-component.engine-line-open {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal
+}
+
+.engine-line-component>span {
+    vertical-align: middle
+}
+
+.engine-line-icon {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    overflow: visible;
+    position: relative;
+    position: absolute;
+    right: .1rem;
+    top: .5rem
+}
+
+.engine-line-icon:after {
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 1.595rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    transition: background .2s ease;
+    width: 1.595rem
+}
+
+.engine-line-icon:hover:after {
+    background-color: rgba(0,0,0,.1)
+}
+
+[class$=-darkMode] .engine-line-icon:hover:after {
+    background-color: hsla(0,0%,100%,.1)
+}
+
+.engine-line-icon span {
+    font-size: 1.45rem;
+    height: 1.45rem;
+    width: 1.45rem
+}
+
+.dark-mode .engine-line-icon:hover:after {
+    background-color: hsla(0,0%,100%,.1)
+}
+
+.engine-line-icon.engine-line-inverted {
+    transform: rotate(180deg)
+}
+
+.engine-line-node.engine-line-clickable {
+    cursor: pointer
+}
+
+.engine-line-node.engine-line-clickable:hover {
+    opacity: .75
+}
+
+.engine-line-thinking {
+    background-image: url(/bundles/web/images/animated/chex12.86811052.gif);
+    display: inline-block;
+    height: 1.2rem;
+    margin-left: .5rem;
+    position: relative;
+    width: 1.2rem
+}
+
+.engine-line-preview {
+    background-color: #dad8d6;
+    border-radius: .2rem;
+    box-shadow: .2rem .8rem 1.5rem rgba(38,33,27,.15);
+    padding: 1rem;
+    position: fixed;
+    transform: translate3d(-1rem,3rem,0);
+    z-index: 1000
+}
+
+.engine-line-preview:before {
+    border-color: transparent transparent #dad8d6 transparent;
+    border-style: solid;
+    border-width: 0 1rem 1rem 1rem;
+    bottom: 100%;
+    content: "";
+    height: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 0
+}
+
+.switch-component {
+    display: inline-block;
+    font-size: 1.2rem;
+    height: 2.2rem;
+    padding: .3rem 0
+}
+
+.switch-component.switch-disabled {
+    filter: grayscale(1);
+    pointer-events: none
+}
+
+.switch-component>label {
+    color: var(--globalColorThemeMid);
+    position: relative;
+    top: -1.3rem
+}
+
+.switch-component .switch-switch {
+    display: inline-block;
+    left: -.75rem;
+    position: relative;
+    top: .1rem;
+    transform: scale(.55);
+    transform-origin: top
+}
+
+.analysis-options-component {
+    background-color: var(--globalSecondaryBackground);
+    border-bottom: .1rem solid var(---globalBorder);
+    font-size: 1.2rem
+}
+
+.analysis-options-component,.analysis-options-component label {
+    color: var(--globalColorThemeMid)
+}
+
+.analysis-options-bar {
+    display: flex;
+    justify-content: space-between;
+    min-height: 0;
+    padding: 1rem 1.5rem
+}
+
+.analysis-options-toggles {
+    display: flex;
+    flex: 1 0;
+    flex-wrap: wrap;
+    margin-right: -2rem
+}
+
+.analysis-options-toggle {
+    align-items: baseline;
+    display: flex;
+    margin-right: -.25rem
+}
+
+.analysis-options-right {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end
+}
+
+.analysis-options-icon {
+    cursor: pointer;
+    font-size: 2rem;
+    height: 2rem;
+    margin-left: .5rem;
+    padding-left: .5rem;
+    width: 2rem
+}
+
+.analysis-options-depth.analysis-options-maxdepth {
+    color: #0097c7
+}
+
+.dark-mode .analysis-options-depth.analysis-options-maxdepth {
+    color: #99daf6
+}
+
+.analysis-options-button {
+    background-color: transparent;
+    border: none;
+    color: var(--globalColorThemeMid);
+    margin: 0;
+    padding: 0
+}
+
+.analysis-options-maxanalysis {
+    font-size: 2rem;
+    height: 2rem;
+    margin-left: 0;
+    margin-right: .5rem;
+    width: 2rem
+}
+
+.analysis-options-maxanalysis.analysis-options-running,.analysis-options-maxanalysis:hover {
+    color: #0097c7
+}
+
+.dark-mode .analysis-options-maxanalysis.analysis-options-running,.dark-mode .analysis-options-maxanalysis:hover {
+    color: #99daf6
+}
+
+.analysis-saved-game-link-component {
+    margin: 1.5rem;
+    text-align: center
+}
+
+.analysis-saved-game-link-link {
+    align-items: center;
+    color: var(--globalColorThemeHigh);
+    display: inline-flex
+}
+
+.analysis-saved-game-link-link:hover {
+    color: var(--globalColorThemeMid)
+}
+
+.analysis-saved-game-link-icon {
+    font-size: 2.8rem;
+    height: 2.8rem;
+    margin-right: .5rem;
+    width: 2.8rem
+}
+
+.analysis-upgrade-button-component {
+    align-items: center;
+    background-color: #0097c7;
+    color: #fff;
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 600;
+    justify-content: center;
+    padding: 1.5rem
+}
+
+.analysis-upgrade-button-component.analysis-upgrade-button-button {
+    border-radius: .3rem;
+    font-size: 1.3rem;
+    max-width: 20rem;
+    padding: .5rem 1.5rem
+}
+
+.analysis-upgrade-button-component .analysis-upgrade-button-icon {
+    font-size: 2.5rem;
+    font-weight: 400;
+    height: 2.5rem;
+    margin-right: 1rem;
+    overflow: visible;
+    width: 2.5rem
+}
+
+.analysis-view-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: auto;
+    width: 100%
+}
+
+.analysis-view-component {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden
+}
+
+.analysis-view-scrollable {
+    border-bottom: 1px solid var(--globalBorder);
+    overflow: auto;
+    padding-bottom: 1rem
+}
+
+.analysis-view-button {
+    display: flex;
+    flex-shrink: 0;
+    margin: 1rem auto
+}
+
+.analysis-view-lines {
+    background-color: var(--globalSecondaryBackground);
+    color: var(--globalColorThemeHigh);
+    padding: 0 .5rem
+}
+
+.analysis-view-maxlines {
+    background: #99daf6;
+    color: #312e2b;
+    padding: 0 .5rem
+}
+
+.analysis-view-movelist {
+    flex: 1 0 auto
+}
+
+.analysis-view-initiating {
+    align-items: center;
+    display: flex;
+    height: 2.6rem;
+    padding: 0 1rem
+}
+
+.analysis-view-players {
+    color: var(--globalColorThemeFullToMid);
+    padding: 1rem 1.5rem 0
+}
+
+.analysis-view-players span {
+    font-weight: 700
+}
+
+.analysis-view-opening {
+    border-bottom: 1px solid var(--globalBorder)
+}
+
+.analysis-feedback-row-bold {
+    font-weight: 600
+}
+
+.analysis-feedback-row-header {
+    color: #8b8987;
+    display: flex;
+    font-weight: 300;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    text-transform: uppercase
+}
+
+.dark-mode .analysis-feedback-row-header {
+    color: hsla(0,0%,100%,.4)
+}
+
+.analysis-feedback-row-inactive {
+    opacity: .2;
+    pointer-events: none
+}
+
+.analysis-feedback-row-scrollable {
+    overflow: auto
+}
+
+.analysis-feedback-row-score {
+    align-items: center;
+    background-color: #fff;
+    border-radius: .3rem;
+    color: #312e2b;
+    display: inline-flex;
+    font-weight: 700;
+    justify-content: center;
+    margin-right: .4rem;
+    padding: .1rem .5rem;
+    vertical-align: middle;
+    width: 4.5rem
+}
+
+.analysis-feedback-row-score.analysis-feedback-row-negative {
+    background-color: #312e2b;
+    color: #fff
+}
+
+.analysis-feedback-row-component {
+    --moveSanFigurineFontSize: 3rem;
+    align-items: center;
+    border-bottom: .1rem solid var(--globalBorder);
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: space-between;
+    max-width: 100%;
+    min-height: var(--rowHeight);
+    position: relative;
+    width: 100%
+}
+
+.analysis-feedback-row-component:last-child {
+    border-bottom: none
+}
+
+.analysis-feedback-row-component .analysis-feedback-row-icon {
+    align-items: center;
+    display: inline-flex;
+    font-size: 2rem;
+    height: 2rem;
+    justify-content: center;
+    width: 2rem
+}
+
+.analysis-feedback-row-component .analysis-feedback-row-score {
+    font-size: 1.5rem;
+    height: 2.6rem;
+    width: 5.4rem
+}
+
+.analysis-feedback-row-lineicon {
+    cursor: pointer;
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem
+}
+
+.analysis-feedback-row-colored {
+    font-weight: 700
+}
+
+.analysis-feedback-row-enginewrap {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1.8rem
+}
+
+.analysis-feedback-row-engine {
+    padding-right: 1rem
+}
+
+.analysis-feedback-row-prefix {
+    margin-right: .5rem
+}
+
+.analysis-feedback-row-line {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 .5rem 0 1rem
+}
+
+.analysis-feedback-row-line .analysis-feedback-row-score {
+    height: 3rem
+}
+
+.analysis-feedback-row-description {
+    align-items: center;
+    display: flex;
+    line-height: 2.8rem
+}
+
+.analysis-feedback-row-description,.analysis-feedback-row-moves {
+    max-width: 100%
+}
+
+.analysis-feedback-row-indicator {
+    border-radius: 100%;
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem
+}
+
+.analysis-feedback-row-indicator.analysis-feedback-row-black {
+    background-color: #26211b;
+    border-color: hsla(0,0%,100%,.15);
+    border-style: solid;
+    border-width: .1rem;
+    display: block
+}
+
+.dark-mode .analysis-feedback-row-indicator.analysis-feedback-row-black {
+    background-color: rgba(0,0,0,.45)
+}
+
+.analysis-feedback-row-indicator.analysis-feedback-row-white {
+    background-color: #fff;
+    border-color: #dad7d5;
+    border-style: solid;
+    border-width: .1rem;
+    display: block
+}
+
+.analysis-feedback-row-moves {
+    height: 2.4rem;
+    position: relative;
+    top: -.2rem
+}
+
+.analysis-feedback-row-icon {
+    display: flex
+}
+
+.analysis-feedback-row-san {
+    display: flex;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    margin-right: .5rem
+}
+
+.analysis-feedback-row-san.analysis-feedback-row-clickable {
+    cursor: pointer
+}
+
+.analysis-feedback-row-scenario {
+    font-style: italic
+}
+
+.analysis-feedback-row-hidden {
+    visibility: hidden
+}
+
+.analysis-feedback-row-topline {
+    align-items: flex-start;
+    display: flex;
+    flex: 1 0 100%;
+    font-size: 1.7rem;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.analysis-feedback-component {
+    --rowHeight: 6.2rem;
+    border-bottom: .1rem solid var(--globalBorder);
+    padding: 0 1.5rem
+}
+
+.analysis-feedback-full {
+    width: 100%
+}
+
+.analysis-feedback-component {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative
+}
+
+.analysis-feedback-loading {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: var(--rowHeight);
+    width: 100%
+}
+

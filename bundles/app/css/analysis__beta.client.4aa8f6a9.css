@@ -1,0 +1,2913 @@
+.analysis-bold {
+    font-weight: 600
+}
+
+.analysis-header {
+    color: #8b8987;
+    display: flex;
+    font-weight: 300;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    text-transform: uppercase
+}
+
+.dark-mode .analysis-header {
+    color: hsla(0,0%,100%,.4)
+}
+
+.analysis-inactive {
+    opacity: .2;
+    pointer-events: none
+}
+
+.analysis-scrollable {
+    overflow: auto
+}
+
+.dark-mode .highcharts-root * {
+    color: hsla(0,0%,100%,.65)!important
+}
+
+.event-page-layout-main g.highcharts-tooltip,.review-view-component g.highcharts-tooltip,.tab-report-component g.highcharts-tooltip,.tab-review-component g.highcharts-tooltip {
+    display: block!important
+}
+
+.analysis-layout g.highcharts-tooltip,.board-layout-analysis g.highcharts-tooltip,.board-layout.with-analysis g.highcharts-tooltip,.event-page-layout-main g.highcharts-tooltip,.review-view-component g.highcharts-tooltip,.tab-key-moments-component g.highcharts-tooltip,.tab-report-component g.highcharts-tooltip,.tab-review-component g.highcharts-tooltip {
+    display: none
+}
+
+.analysis-layout .highcharts-axis-line,.analysis-layout .highcharts-grid-line,.analysis-layout .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.analysis-layout .highcharts-tick,.board-layout-analysis .highcharts-axis-line,.board-layout-analysis .highcharts-grid-line,.board-layout-analysis .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.board-layout-analysis .highcharts-tick,.board-layout.with-analysis .highcharts-axis-line,.board-layout.with-analysis .highcharts-grid-line,.board-layout.with-analysis .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.board-layout.with-analysis .highcharts-tick,.event-page-layout-main .highcharts-axis-line,.event-page-layout-main .highcharts-grid-line,.event-page-layout-main .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.event-page-layout-main .highcharts-tick,.review-view-component .highcharts-axis-line,.review-view-component .highcharts-grid-line,.review-view-component .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.review-view-component .highcharts-tick,.tab-key-moments-component .highcharts-axis-line,.tab-key-moments-component .highcharts-grid-line,.tab-key-moments-component .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.tab-key-moments-component .highcharts-tick,.tab-report-component .highcharts-axis-line,.tab-report-component .highcharts-grid-line,.tab-report-component .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.tab-report-component .highcharts-tick,.tab-review-component .highcharts-axis-line,.tab-review-component .highcharts-grid-line,.tab-review-component .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.tab-review-component .highcharts-tick {
+    stroke: rgba(38,33,27,.12)
+}
+
+.dark-mode .analysis-layout .highcharts-axis-line,.dark-mode .analysis-layout .highcharts-grid-line,.dark-mode .analysis-layout .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.dark-mode .analysis-layout .highcharts-tick,.dark-mode .board-layout-analysis .highcharts-axis-line,.dark-mode .board-layout-analysis .highcharts-grid-line,.dark-mode .board-layout-analysis .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.dark-mode .board-layout-analysis .highcharts-tick,.dark-mode .board-layout.with-analysis .highcharts-axis-line,.dark-mode .board-layout.with-analysis .highcharts-grid-line,.dark-mode .board-layout.with-analysis .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.dark-mode .board-layout.with-analysis .highcharts-tick,.dark-mode .event-page-layout-main .highcharts-axis-line,.dark-mode .event-page-layout-main .highcharts-grid-line,.dark-mode .event-page-layout-main .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.dark-mode .event-page-layout-main .highcharts-tick,.dark-mode .review-view-component .highcharts-axis-line,.dark-mode .review-view-component .highcharts-grid-line,.dark-mode .review-view-component .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.dark-mode .review-view-component .highcharts-tick,.dark-mode .tab-key-moments-component .highcharts-axis-line,.dark-mode .tab-key-moments-component .highcharts-grid-line,.dark-mode .tab-key-moments-component .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.dark-mode .tab-key-moments-component .highcharts-tick,.dark-mode .tab-report-component .highcharts-axis-line,.dark-mode .tab-report-component .highcharts-grid-line,.dark-mode .tab-report-component .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.dark-mode .tab-report-component .highcharts-tick,.dark-mode .tab-review-component .highcharts-axis-line,.dark-mode .tab-review-component .highcharts-grid-line,.dark-mode .tab-review-component .highcharts-plot-line:not(.game-phase-plot-line):not(.best-move-plot-line),.dark-mode .tab-review-component .highcharts-tick {
+    stroke: hsla(0,0%,100%,.1)
+}
+
+.analysis-layout .highcharts-point-white,.board-layout-analysis .highcharts-point-white,.board-layout.with-analysis .highcharts-point-white,.event-page-layout-main .highcharts-point-white,.review-view-component .highcharts-point-white,.tab-key-moments-component .highcharts-point-white,.tab-report-component .highcharts-point-white,.tab-review-component .highcharts-point-white {
+    fill: rgba(38,33,27,.15);
+    stroke: transparent
+}
+
+.dark-mode .analysis-layout .highcharts-point-white,.dark-mode .board-layout-analysis .highcharts-point-white,.dark-mode .board-layout.with-analysis .highcharts-point-white,.dark-mode .event-page-layout-main .highcharts-point-white,.dark-mode .review-view-component .highcharts-point-white,.dark-mode .tab-key-moments-component .highcharts-point-white,.dark-mode .tab-report-component .highcharts-point-white,.dark-mode .tab-review-component .highcharts-point-white {
+    fill: hsla(0,0%,100%,.5);
+    stroke: transparent
+}
+
+.dark-mode .analysis-layout .highcharts-point-white.highcharts-point-select,.dark-mode .board-layout-analysis .highcharts-point-white.highcharts-point-select,.dark-mode .board-layout.with-analysis .highcharts-point-white.highcharts-point-select,.dark-mode .event-page-layout-main .highcharts-point-white.highcharts-point-select,.dark-mode .review-view-component .highcharts-point-white.highcharts-point-select,.dark-mode .tab-key-moments-component .highcharts-point-white.highcharts-point-select,.dark-mode .tab-report-component .highcharts-point-white.highcharts-point-select,.dark-mode .tab-review-component .highcharts-point-white.highcharts-point-select {
+    fill: hsla(0,0%,100%,.85)
+}
+
+.analysis-layout .highcharts-point-black,.board-layout-analysis .highcharts-point-black,.board-layout.with-analysis .highcharts-point-black,.event-page-layout-main .highcharts-point-black,.review-view-component .highcharts-point-black,.tab-key-moments-component .highcharts-point-black,.tab-report-component .highcharts-point-black,.tab-review-component .highcharts-point-black {
+    fill: #312e2b;
+    stroke: transparent
+}
+
+.analysis-layout .highcharts-point-black.highcharts-point-select,.board-layout-analysis .highcharts-point-black.highcharts-point-select,.board-layout.with-analysis .highcharts-point-black.highcharts-point-select,.event-page-layout-main .highcharts-point-black.highcharts-point-select,.review-view-component .highcharts-point-black.highcharts-point-select,.tab-key-moments-component .highcharts-point-black.highcharts-point-select,.tab-report-component .highcharts-point-black.highcharts-point-select,.tab-review-component .highcharts-point-black.highcharts-point-select {
+    fill: rgba(49,46,43,.65)
+}
+
+.dark-mode .analysis-layout .highcharts-point-black,.dark-mode .board-layout-analysis .highcharts-point-black,.dark-mode .board-layout.with-analysis .highcharts-point-black,.dark-mode .event-page-layout-main .highcharts-point-black,.dark-mode .review-view-component .highcharts-point-black,.dark-mode .tab-key-moments-component .highcharts-point-black,.dark-mode .tab-report-component .highcharts-point-black,.dark-mode .tab-review-component .highcharts-point-black {
+    fill: hsla(0,0%,100%,.2);
+    stroke: transparent
+}
+
+.dark-mode .analysis-layout .highcharts-point-black.highcharts-point-select,.dark-mode .board-layout-analysis .highcharts-point-black.highcharts-point-select,.dark-mode .board-layout.with-analysis .highcharts-point-black.highcharts-point-select,.dark-mode .event-page-layout-main .highcharts-point-black.highcharts-point-select,.dark-mode .review-view-component .highcharts-point-black.highcharts-point-select,.dark-mode .tab-key-moments-component .highcharts-point-black.highcharts-point-select,.dark-mode .tab-report-component .highcharts-point-black.highcharts-point-select,.dark-mode .tab-review-component .highcharts-point-black.highcharts-point-select {
+    fill: #0097c7;
+    opacity: .75
+}
+
+.analysis-layout .highcharts-series-background .highcharts-point,.board-layout-analysis .highcharts-series-background .highcharts-point,.board-layout.with-analysis .highcharts-series-background .highcharts-point,.event-page-layout-main .highcharts-series-background .highcharts-point,.review-view-component .highcharts-series-background .highcharts-point,.tab-key-moments-component .highcharts-series-background .highcharts-point,.tab-report-component .highcharts-series-background .highcharts-point,.tab-review-component .highcharts-series-background .highcharts-point {
+    stroke-width: 0;
+    opacity: 0
+}
+
+.analysis-layout .highcharts-series-background .highcharts-point.key-moment-point,.board-layout-analysis .highcharts-series-background .highcharts-point.key-moment-point,.board-layout.with-analysis .highcharts-series-background .highcharts-point.key-moment-point,.event-page-layout-main .highcharts-series-background .highcharts-point.key-moment-point,.review-view-component .highcharts-series-background .highcharts-point.key-moment-point,.tab-key-moments-component .highcharts-series-background .highcharts-point.key-moment-point,.tab-report-component .highcharts-series-background .highcharts-point.key-moment-point,.tab-review-component .highcharts-series-background .highcharts-point.key-moment-point {
+    opacity: .75;
+    width: 1px
+}
+
+.analysis-layout .highcharts-series-background .highcharts-point.key-moment-point:hover,.board-layout-analysis .highcharts-series-background .highcharts-point.key-moment-point:hover,.board-layout.with-analysis .highcharts-series-background .highcharts-point.key-moment-point:hover,.event-page-layout-main .highcharts-series-background .highcharts-point.key-moment-point:hover,.review-view-component .highcharts-series-background .highcharts-point.key-moment-point:hover,.tab-key-moments-component .highcharts-series-background .highcharts-point.key-moment-point:hover,.tab-report-component .highcharts-series-background .highcharts-point.key-moment-point:hover,.tab-review-component .highcharts-series-background .highcharts-point.key-moment-point:hover {
+    height: 100%;
+    transform: translateX(-2.5px);
+    width: 5px
+}
+
+.analysis-layout .highcharts-series-background .highcharts-point:not(.key-moment-point),.board-layout-analysis .highcharts-series-background .highcharts-point:not(.key-moment-point),.board-layout.with-analysis .highcharts-series-background .highcharts-point:not(.key-moment-point),.event-page-layout-main .highcharts-series-background .highcharts-point:not(.key-moment-point),.review-view-component .highcharts-series-background .highcharts-point:not(.key-moment-point),.tab-key-moments-component .highcharts-series-background .highcharts-point:not(.key-moment-point),.tab-report-component .highcharts-series-background .highcharts-point:not(.key-moment-point),.tab-review-component .highcharts-series-background .highcharts-point:not(.key-moment-point) {
+    fill: #fff35f
+}
+
+.analysis-layout .highcharts-series-background .highcharts-point.highcharts-point-select,.board-layout-analysis .highcharts-series-background .highcharts-point.highcharts-point-select,.board-layout.with-analysis .highcharts-series-background .highcharts-point.highcharts-point-select,.event-page-layout-main .highcharts-series-background .highcharts-point.highcharts-point-select,.review-view-component .highcharts-series-background .highcharts-point.highcharts-point-select,.tab-key-moments-component .highcharts-series-background .highcharts-point.highcharts-point-select,.tab-report-component .highcharts-series-background .highcharts-point.highcharts-point-select,.tab-review-component .highcharts-series-background .highcharts-point.highcharts-point-select {
+    opacity: 1
+}
+
+.dark-mode .analysis-layout .highcharts-series-background .highcharts-point.highcharts-point-select:not(.key-moment-point),.dark-mode .board-layout-analysis .highcharts-series-background .highcharts-point.highcharts-point-select:not(.key-moment-point),.dark-mode .board-layout.with-analysis .highcharts-series-background .highcharts-point.highcharts-point-select:not(.key-moment-point),.dark-mode .event-page-layout-main .highcharts-series-background .highcharts-point.highcharts-point-select:not(.key-moment-point),.dark-mode .review-view-component .highcharts-series-background .highcharts-point.highcharts-point-select:not(.key-moment-point),.dark-mode .tab-key-moments-component .highcharts-series-background .highcharts-point.highcharts-point-select:not(.key-moment-point),.dark-mode .tab-report-component .highcharts-series-background .highcharts-point.highcharts-point-select:not(.key-moment-point),.dark-mode .tab-review-component .highcharts-series-background .highcharts-point.highcharts-point-select:not(.key-moment-point) {
+    fill: hsla(0,0%,100%,.1)
+}
+
+.analysis-layout .highcharts-series-background .highcharts-point.highcharts-point-select.key-moment-point,.board-layout-analysis .highcharts-series-background .highcharts-point.highcharts-point-select.key-moment-point,.board-layout.with-analysis .highcharts-series-background .highcharts-point.highcharts-point-select.key-moment-point,.event-page-layout-main .highcharts-series-background .highcharts-point.highcharts-point-select.key-moment-point,.review-view-component .highcharts-series-background .highcharts-point.highcharts-point-select.key-moment-point,.tab-key-moments-component .highcharts-series-background .highcharts-point.highcharts-point-select.key-moment-point,.tab-report-component .highcharts-series-background .highcharts-point.highcharts-point-select.key-moment-point,.tab-review-component .highcharts-series-background .highcharts-point.highcharts-point-select.key-moment-point {
+    transform: translateX(-2.5px);
+    width: 5px
+}
+
+.analysis-layout .highcharts-crosshair,.board-layout-analysis .highcharts-crosshair,.board-layout.with-analysis .highcharts-crosshair,.event-page-layout-main .highcharts-crosshair,.review-view-component .highcharts-crosshair,.tab-key-moments-component .highcharts-crosshair,.tab-report-component .highcharts-crosshair,.tab-review-component .highcharts-crosshair {
+    stroke: #fff9ac
+}
+
+.dark-mode .analysis-layout .highcharts-crosshair,.dark-mode .board-layout-analysis .highcharts-crosshair,.dark-mode .board-layout.with-analysis .highcharts-crosshair,.dark-mode .event-page-layout-main .highcharts-crosshair,.dark-mode .review-view-component .highcharts-crosshair,.dark-mode .tab-key-moments-component .highcharts-crosshair,.dark-mode .tab-report-component .highcharts-crosshair,.dark-mode .tab-review-component .highcharts-crosshair {
+    stroke: hsla(0,0%,100%,.1)
+}
+
+.analysis-layout .highcharts-themes,.board-layout-analysis .highcharts-themes,.board-layout.with-analysis .highcharts-themes,.event-page-layout-main .highcharts-themes,.review-view-component .highcharts-themes,.tab-key-moments-component .highcharts-themes,.tab-report-component .highcharts-themes,.tab-review-component .highcharts-themes {
+    overflow-y: scroll!important
+}
+
+.analysis-layout .highcharts-themes .highcharts-fixed,.board-layout-analysis .highcharts-themes .highcharts-fixed,.board-layout.with-analysis .highcharts-themes .highcharts-fixed,.event-page-layout-main .highcharts-themes .highcharts-fixed,.review-view-component .highcharts-themes .highcharts-fixed,.tab-key-moments-component .highcharts-themes .highcharts-fixed,.tab-report-component .highcharts-themes .highcharts-fixed,.tab-review-component .highcharts-themes .highcharts-fixed {
+    overflow: visible!important
+}
+
+.analysis-layout .highcharts-themes .highcharts-scrollable-mask,.board-layout-analysis .highcharts-themes .highcharts-scrollable-mask,.board-layout.with-analysis .highcharts-themes .highcharts-scrollable-mask,.event-page-layout-main .highcharts-themes .highcharts-scrollable-mask,.review-view-component .highcharts-themes .highcharts-scrollable-mask,.tab-key-moments-component .highcharts-themes .highcharts-scrollable-mask,.tab-report-component .highcharts-themes .highcharts-scrollable-mask,.tab-review-component .highcharts-themes .highcharts-scrollable-mask {
+    fill: #e7e6e5
+}
+
+.dark-mode .analysis-layout .highcharts-themes .highcharts-scrollable-mask,.dark-mode .board-layout-analysis .highcharts-themes .highcharts-scrollable-mask,.dark-mode .board-layout.with-analysis .highcharts-themes .highcharts-scrollable-mask,.dark-mode .event-page-layout-main .highcharts-themes .highcharts-scrollable-mask,.dark-mode .review-view-component .highcharts-themes .highcharts-scrollable-mask,.dark-mode .tab-key-moments-component .highcharts-themes .highcharts-scrollable-mask,.dark-mode .tab-report-component .highcharts-themes .highcharts-scrollable-mask,.dark-mode .tab-review-component .highcharts-themes .highcharts-scrollable-mask {
+    fill: #22201e
+}
+
+.analysis-layout .highcharts-themes .highcharts-series-background .highcharts-point,.board-layout-analysis .highcharts-themes .highcharts-series-background .highcharts-point,.board-layout.with-analysis .highcharts-themes .highcharts-series-background .highcharts-point,.event-page-layout-main .highcharts-themes .highcharts-series-background .highcharts-point,.review-view-component .highcharts-themes .highcharts-series-background .highcharts-point,.tab-key-moments-component .highcharts-themes .highcharts-series-background .highcharts-point,.tab-report-component .highcharts-themes .highcharts-series-background .highcharts-point,.tab-review-component .highcharts-themes .highcharts-series-background .highcharts-point {
+    transform: translateY(-5rem)
+}
+
+.analysis-layout .highcharts-themes .highcharts-series-themes .highcharts-point,.board-layout-analysis .highcharts-themes .highcharts-series-themes .highcharts-point,.board-layout.with-analysis .highcharts-themes .highcharts-series-themes .highcharts-point,.event-page-layout-main .highcharts-themes .highcharts-series-themes .highcharts-point,.review-view-component .highcharts-themes .highcharts-series-themes .highcharts-point,.tab-key-moments-component .highcharts-themes .highcharts-series-themes .highcharts-point,.tab-report-component .highcharts-themes .highcharts-series-themes .highcharts-point,.tab-review-component .highcharts-themes .highcharts-series-themes .highcharts-point {
+    pointer-events: none
+}
+
+.analysis-layout .highcharts-themes .highcharts-yaxis-labels,.board-layout-analysis .highcharts-themes .highcharts-yaxis-labels,.board-layout.with-analysis .highcharts-themes .highcharts-yaxis-labels,.event-page-layout-main .highcharts-themes .highcharts-yaxis-labels,.review-view-component .highcharts-themes .highcharts-yaxis-labels,.tab-key-moments-component .highcharts-themes .highcharts-yaxis-labels,.tab-report-component .highcharts-themes .highcharts-yaxis-labels,.tab-review-component .highcharts-themes .highcharts-yaxis-labels {
+    height: 100%;
+    width: 10rem
+}
+
+.dark-mode .analysis-layout .highcharts-themes .highcharts-xaxis-labels,.dark-mode .board-layout-analysis .highcharts-themes .highcharts-xaxis-labels,.dark-mode .board-layout.with-analysis .highcharts-themes .highcharts-xaxis-labels,.dark-mode .event-page-layout-main .highcharts-themes .highcharts-xaxis-labels,.dark-mode .review-view-component .highcharts-themes .highcharts-xaxis-labels,.dark-mode .tab-key-moments-component .highcharts-themes .highcharts-xaxis-labels,.dark-mode .tab-report-component .highcharts-themes .highcharts-xaxis-labels,.dark-mode .tab-review-component .highcharts-themes .highcharts-xaxis-labels {
+    background-color: rgba(0,0,0,.2);
+    height: 2.5rem;
+    width: 100%
+}
+
+.dark-mode .analysis-layout .highcharts-themes .highcharts-xaxis-labels>span,.dark-mode .board-layout-analysis .highcharts-themes .highcharts-xaxis-labels>span,.dark-mode .board-layout.with-analysis .highcharts-themes .highcharts-xaxis-labels>span,.dark-mode .event-page-layout-main .highcharts-themes .highcharts-xaxis-labels>span,.dark-mode .review-view-component .highcharts-themes .highcharts-xaxis-labels>span,.dark-mode .tab-key-moments-component .highcharts-themes .highcharts-xaxis-labels>span,.dark-mode .tab-report-component .highcharts-themes .highcharts-xaxis-labels>span,.dark-mode .tab-review-component .highcharts-themes .highcharts-xaxis-labels>span {
+    color: hsla(0,0%,100%,.4)!important
+}
+
+.dark-mode .analysis-layout .highcharts-themes .highcharts-yaxis-labels>span,.dark-mode .analysis-layout .highcharts-themes .highcharts-yaxis-labels>text,.dark-mode .board-layout-analysis .highcharts-themes .highcharts-yaxis-labels>span,.dark-mode .board-layout-analysis .highcharts-themes .highcharts-yaxis-labels>text,.dark-mode .board-layout.with-analysis .highcharts-themes .highcharts-yaxis-labels>span,.dark-mode .board-layout.with-analysis .highcharts-themes .highcharts-yaxis-labels>text,.dark-mode .event-page-layout-main .highcharts-themes .highcharts-yaxis-labels>span,.dark-mode .event-page-layout-main .highcharts-themes .highcharts-yaxis-labels>text,.dark-mode .review-view-component .highcharts-themes .highcharts-yaxis-labels>span,.dark-mode .review-view-component .highcharts-themes .highcharts-yaxis-labels>text,.dark-mode .tab-key-moments-component .highcharts-themes .highcharts-yaxis-labels>span,.dark-mode .tab-key-moments-component .highcharts-themes .highcharts-yaxis-labels>text,.dark-mode .tab-report-component .highcharts-themes .highcharts-yaxis-labels>span,.dark-mode .tab-report-component .highcharts-themes .highcharts-yaxis-labels>text,.dark-mode .tab-review-component .highcharts-themes .highcharts-yaxis-labels>span,.dark-mode .tab-review-component .highcharts-themes .highcharts-yaxis-labels>text {
+    padding-left: .5rem
+}
+
+.analysis-layout .highcharts-loading,.board-layout-analysis .highcharts-loading,.board-layout.with-analysis .highcharts-loading,.event-page-layout-main .highcharts-loading,.review-view-component .highcharts-loading,.tab-key-moments-component .highcharts-loading,.tab-report-component .highcharts-loading,.tab-review-component .highcharts-loading {
+    display: none
+}
+
+.analysis-layout .themes-label,.board-layout-analysis .themes-label,.board-layout.with-analysis .themes-label,.event-page-layout-main .themes-label,.review-view-component .themes-label,.tab-key-moments-component .themes-label,.tab-report-component .themes-label,.tab-review-component .themes-label {
+    display: block;
+    width: 100%
+}
+
+.analysis-layout .themes-label.highlight,.board-layout-analysis .themes-label.highlight,.board-layout.with-analysis .themes-label.highlight,.event-page-layout-main .themes-label.highlight,.review-view-component .themes-label.highlight,.tab-key-moments-component .themes-label.highlight,.tab-report-component .themes-label.highlight,.tab-review-component .themes-label.highlight {
+    fill: #6c9d41;
+    color: #6c9d41
+}
+
+.dark-mode .analysis-layout .themes-label,.dark-mode .board-layout-analysis .themes-label,.dark-mode .board-layout.with-analysis .themes-label,.dark-mode .event-page-layout-main .themes-label,.dark-mode .review-view-component .themes-label,.dark-mode .tab-key-moments-component .themes-label,.dark-mode .tab-report-component .themes-label,.dark-mode .tab-review-component .themes-label {
+    fill: hsla(0,0%,100%,.4);
+    color: hsla(0,0%,100%,.4)
+}
+
+.dark-mode .analysis-layout .themes-label.highlight,.dark-mode .board-layout-analysis .themes-label.highlight,.dark-mode .board-layout.with-analysis .themes-label.highlight,.dark-mode .event-page-layout-main .themes-label.highlight,.dark-mode .review-view-component .themes-label.highlight,.dark-mode .tab-key-moments-component .themes-label.highlight,.dark-mode .tab-report-component .themes-label.highlight,.dark-mode .tab-review-component .themes-label.highlight {
+    fill: #fff;
+    color: #fff
+}
+
+.analysis-layout .highcharts-plot-line-label,.board-layout-analysis .highcharts-plot-line-label,.board-layout.with-analysis .highcharts-plot-line-label,.event-page-layout-main .highcharts-plot-line-label,.review-view-component .highcharts-plot-line-label,.tab-key-moments-component .highcharts-plot-line-label,.tab-report-component .highcharts-plot-line-label,.tab-review-component .highcharts-plot-line-label {
+    z-index: 1
+}
+
+.analysis-layout .game-phase-label,.board-layout-analysis .game-phase-label,.board-layout.with-analysis .game-phase-label,.event-page-layout-main .game-phase-label,.review-view-component .game-phase-label,.tab-key-moments-component .game-phase-label,.tab-report-component .game-phase-label,.tab-review-component .game-phase-label {
+    background-color: #fff;
+    border-radius: .2rem;
+    border-style: solid;
+    border-width: .1rem;
+    padding: .2rem .5rem;
+    z-index: 1
+}
+
+.dark-mode .analysis-layout .game-phase-label,.dark-mode .board-layout-analysis .game-phase-label,.dark-mode .board-layout.with-analysis .game-phase-label,.dark-mode .event-page-layout-main .game-phase-label,.dark-mode .review-view-component .game-phase-label,.dark-mode .tab-key-moments-component .game-phase-label,.dark-mode .tab-report-component .game-phase-label,.dark-mode .tab-review-component .game-phase-label {
+    background-color: #26211b
+}
+
+.analysis-layout .game-phase-middle,.board-layout-analysis .game-phase-middle,.board-layout.with-analysis .game-phase-middle,.event-page-layout-main .game-phase-middle,.review-view-component .game-phase-middle,.tab-key-moments-component .game-phase-middle,.tab-report-component .game-phase-middle,.tab-review-component .game-phase-middle {
+    stroke: orange;
+    border-color: orange;
+    color: orange
+}
+
+.analysis-layout .game-phase-end,.board-layout-analysis .game-phase-end,.board-layout.with-analysis .game-phase-end,.event-page-layout-main .game-phase-end,.review-view-component .game-phase-end,.tab-key-moments-component .game-phase-end,.tab-report-component .game-phase-end,.tab-review-component .game-phase-end {
+    stroke: #649bf6;
+    border-color: #649bf6;
+    color: #649bf6
+}
+
+.analysis-layout .best-move-plot-line,.board-layout-analysis .best-move-plot-line,.board-layout.with-analysis .best-move-plot-line,.event-page-layout-main .best-move-plot-line,.review-view-component .best-move-plot-line,.tab-key-moments-component .best-move-plot-line,.tab-report-component .best-move-plot-line,.tab-review-component .best-move-plot-line {
+    stroke: rgba(150,188,75,.65)
+}
+
+.analysis-layout .charts-component .highcharts-tooltip>span,.board-layout-analysis .charts-component .highcharts-tooltip>span,.board-layout.with-analysis .charts-component .highcharts-tooltip>span,.event-page-layout-main .charts-component .highcharts-tooltip>span,.review-view-component .charts-component .highcharts-tooltip>span,.tab-key-moments-component .charts-component .highcharts-tooltip>span,.tab-report-component .charts-component .highcharts-tooltip>span,.tab-review-component .charts-component .highcharts-tooltip>span {
+    background-color: #fff;
+    border-radius: .3rem;
+    font-size: 1.1rem
+}
+
+.analysis-layout .highcharts-best-move .highcharts-plot-line-label,.board-layout-analysis .highcharts-best-move .highcharts-plot-line-label,.board-layout.with-analysis .highcharts-best-move .highcharts-plot-line-label,.event-page-layout-main .highcharts-best-move .highcharts-plot-line-label,.review-view-component .highcharts-best-move .highcharts-plot-line-label,.tab-key-moments-component .highcharts-best-move .highcharts-plot-line-label,.tab-report-component .highcharts-best-move .highcharts-plot-line-label,.tab-review-component .highcharts-best-move .highcharts-plot-line-label {
+    fill: #fff;
+    font-size: .9rem
+}
+
+.analysis-layout .highcharts-best-move .avg-label,.board-layout-analysis .highcharts-best-move .avg-label,.board-layout.with-analysis .highcharts-best-move .avg-label,.event-page-layout-main .highcharts-best-move .avg-label,.review-view-component .highcharts-best-move .avg-label,.tab-key-moments-component .highcharts-best-move .avg-label,.tab-report-component .highcharts-best-move .avg-label,.tab-review-component .highcharts-best-move .avg-label {
+    align-items: center;
+    display: flex;
+    font-size: .9rem
+}
+
+.dark-mode .analysis-layout .highcharts-best-move .avg-label,.dark-mode .board-layout-analysis .highcharts-best-move .avg-label,.dark-mode .board-layout.with-analysis .highcharts-best-move .avg-label,.dark-mode .event-page-layout-main .highcharts-best-move .avg-label,.dark-mode .review-view-component .highcharts-best-move .avg-label,.dark-mode .tab-key-moments-component .highcharts-best-move .avg-label,.dark-mode .tab-report-component .highcharts-best-move .avg-label,.dark-mode .tab-review-component .highcharts-best-move .avg-label {
+    color: hsla(0,0%,100%,.4)
+}
+
+.analysis-layout .highcharts-best-move .avg-label .rect,.board-layout-analysis .highcharts-best-move .avg-label .rect,.board-layout.with-analysis .highcharts-best-move .avg-label .rect,.event-page-layout-main .highcharts-best-move .avg-label .rect,.review-view-component .highcharts-best-move .avg-label .rect,.tab-key-moments-component .highcharts-best-move .avg-label .rect,.tab-report-component .highcharts-best-move .avg-label .rect,.tab-review-component .highcharts-best-move .avg-label .rect {
+    background-color: #26211b;
+    border-color: hsla(0,0%,100%,.15);
+    border-radius: 100%;
+    border-style: solid;
+    border-width: .1rem;
+    display: block;
+    height: 1rem;
+    margin-right: .5rem;
+    width: 1rem
+}
+
+.dark-mode .analysis-layout .highcharts-best-move .avg-label .rect,.dark-mode .board-layout-analysis .highcharts-best-move .avg-label .rect,.dark-mode .board-layout.with-analysis .highcharts-best-move .avg-label .rect,.dark-mode .event-page-layout-main .highcharts-best-move .avg-label .rect,.dark-mode .review-view-component .highcharts-best-move .avg-label .rect,.dark-mode .tab-key-moments-component .highcharts-best-move .avg-label .rect,.dark-mode .tab-report-component .highcharts-best-move .avg-label .rect,.dark-mode .tab-review-component .highcharts-best-move .avg-label .rect {
+    background-color: rgba(0,0,0,.45)
+}
+
+.analysis-layout .highcharts-best-move .avg-label.avg-label-white .rect,.board-layout-analysis .highcharts-best-move .avg-label.avg-label-white .rect,.board-layout.with-analysis .highcharts-best-move .avg-label.avg-label-white .rect,.event-page-layout-main .highcharts-best-move .avg-label.avg-label-white .rect,.review-view-component .highcharts-best-move .avg-label.avg-label-white .rect,.tab-key-moments-component .highcharts-best-move .avg-label.avg-label-white .rect,.tab-report-component .highcharts-best-move .avg-label.avg-label-white .rect,.tab-review-component .highcharts-best-move .avg-label.avg-label-white .rect {
+    background-color: #fff;
+    border-color: #dad7d5;
+    border-style: solid;
+    border-width: .1rem;
+    display: block
+}
+
+.analysis-layout .tooltip-header,.board-layout-analysis .tooltip-header,.board-layout.with-analysis .tooltip-header,.event-page-layout-main .tooltip-header,.review-view-component .tooltip-header,.tab-key-moments-component .tooltip-header,.tab-report-component .tooltip-header,.tab-review-component .tooltip-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.analysis-layout .tooltip-header .tooltip-markup,.board-layout-analysis .tooltip-header .tooltip-markup,.board-layout.with-analysis .tooltip-header .tooltip-markup,.event-page-layout-main .tooltip-header .tooltip-markup,.review-view-component .tooltip-header .tooltip-markup,.tab-key-moments-component .tooltip-header .tooltip-markup,.tab-report-component .tooltip-header .tooltip-markup,.tab-review-component .tooltip-header .tooltip-markup {
+    height: 1.5rem;
+    margin-left: .5rem;
+    width: 1.5rem
+}
+
+.analysis-layout .tooltip-header .tooltip-value,.board-layout-analysis .tooltip-header .tooltip-value,.board-layout.with-analysis .tooltip-header .tooltip-value,.event-page-layout-main .tooltip-header .tooltip-value,.review-view-component .tooltip-header .tooltip-value,.tab-key-moments-component .tooltip-header .tooltip-value,.tab-report-component .tooltip-header .tooltip-value,.tab-review-component .tooltip-header .tooltip-value {
+    margin-left: .2rem
+}
+
+.analysis-layout .tooltip-header .tooltip-player,.board-layout-analysis .tooltip-header .tooltip-player,.board-layout.with-analysis .tooltip-header .tooltip-player,.event-page-layout-main .tooltip-header .tooltip-player,.review-view-component .tooltip-header .tooltip-player,.tab-key-moments-component .tooltip-header .tooltip-player,.tab-report-component .tooltip-header .tooltip-player,.tab-review-component .tooltip-header .tooltip-player {
+    background-color: #26211b;
+    border-color: hsla(0,0%,100%,.15);
+    border-radius: 100%;
+    border-style: solid;
+    border-width: .1rem;
+    display: block;
+    display: inline-block;
+    height: 1rem;
+    margin-right: .5rem;
+    width: 1rem
+}
+
+.dark-mode .analysis-layout .tooltip-header .tooltip-player,.dark-mode .board-layout-analysis .tooltip-header .tooltip-player,.dark-mode .board-layout.with-analysis .tooltip-header .tooltip-player,.dark-mode .event-page-layout-main .tooltip-header .tooltip-player,.dark-mode .review-view-component .tooltip-header .tooltip-player,.dark-mode .tab-key-moments-component .tooltip-header .tooltip-player,.dark-mode .tab-report-component .tooltip-header .tooltip-player,.dark-mode .tab-review-component .tooltip-header .tooltip-player {
+    background-color: rgba(0,0,0,.45)
+}
+
+.analysis-layout .tooltip-header .tooltip-player.white,.board-layout-analysis .tooltip-header .tooltip-player.white,.board-layout.with-analysis .tooltip-header .tooltip-player.white,.event-page-layout-main .tooltip-header .tooltip-player.white,.review-view-component .tooltip-header .tooltip-player.white,.tab-key-moments-component .tooltip-header .tooltip-player.white,.tab-report-component .tooltip-header .tooltip-player.white,.tab-review-component .tooltip-header .tooltip-player.white {
+    background-color: #fff;
+    border-color: #dad7d5;
+    border-style: solid;
+    border-width: .1rem;
+    display: block;
+    display: inline-block
+}
+
+.analysis-layout .highcharts-game-arc.no-classifications .highcharts-point,.board-layout-analysis .highcharts-game-arc.no-classifications .highcharts-point,.board-layout.with-analysis .highcharts-game-arc.no-classifications .highcharts-point,.event-page-layout-main .highcharts-game-arc.no-classifications .highcharts-point,.review-view-component .highcharts-game-arc.no-classifications .highcharts-point,.tab-key-moments-component .highcharts-game-arc.no-classifications .highcharts-point,.tab-report-component .highcharts-game-arc.no-classifications .highcharts-point,.tab-review-component .highcharts-game-arc.no-classifications .highcharts-point {
+    fill: #e7e6e5!important
+}
+
+.analysis-layout .highcharts-game-arc .highcharts-background,.board-layout-analysis .highcharts-game-arc .highcharts-background,.board-layout.with-analysis .highcharts-game-arc .highcharts-background,.event-page-layout-main .highcharts-game-arc .highcharts-background,.review-view-component .highcharts-game-arc .highcharts-background,.tab-key-moments-component .highcharts-game-arc .highcharts-background,.tab-report-component .highcharts-game-arc .highcharts-background,.tab-review-component .highcharts-game-arc .highcharts-background {
+    fill: transparent
+}
+
+.analysis-layout .highcharts-game-arc .highcharts-series-background .highcharts-point,.board-layout-analysis .highcharts-game-arc .highcharts-series-background .highcharts-point,.board-layout.with-analysis .highcharts-game-arc .highcharts-series-background .highcharts-point,.event-page-layout-main .highcharts-game-arc .highcharts-series-background .highcharts-point,.review-view-component .highcharts-game-arc .highcharts-series-background .highcharts-point,.tab-key-moments-component .highcharts-game-arc .highcharts-series-background .highcharts-point,.tab-report-component .highcharts-game-arc .highcharts-series-background .highcharts-point,.tab-review-component .highcharts-game-arc .highcharts-series-background .highcharts-point {
+    opacity: 0
+}
+
+.analysis-layout .highcharts-game-arc .highcharts-axis-line,.analysis-layout .highcharts-game-arc .highcharts-grid-line,.board-layout-analysis .highcharts-game-arc .highcharts-axis-line,.board-layout-analysis .highcharts-game-arc .highcharts-grid-line,.board-layout.with-analysis .highcharts-game-arc .highcharts-axis-line,.board-layout.with-analysis .highcharts-game-arc .highcharts-grid-line,.event-page-layout-main .highcharts-game-arc .highcharts-axis-line,.event-page-layout-main .highcharts-game-arc .highcharts-grid-line,.review-view-component .highcharts-game-arc .highcharts-axis-line,.review-view-component .highcharts-game-arc .highcharts-grid-line,.tab-key-moments-component .highcharts-game-arc .highcharts-axis-line,.tab-key-moments-component .highcharts-game-arc .highcharts-grid-line,.tab-report-component .highcharts-game-arc .highcharts-axis-line,.tab-report-component .highcharts-game-arc .highcharts-grid-line,.tab-review-component .highcharts-game-arc .highcharts-axis-line,.tab-review-component .highcharts-game-arc .highcharts-grid-line {
+    display: none
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-area,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-area,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-area,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-area,.review-view-component .highcharts-game-arc .arc-color .highcharts-area,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-area,.tab-report-component .highcharts-game-arc .arc-color .highcharts-area,.tab-review-component .highcharts-game-arc .arc-color .highcharts-area {
+    fill: #bebdb9;
+    opacity: .75
+}
+
+.dark-mode .analysis-layout .highcharts-game-arc .arc-color .highcharts-area,.dark-mode .board-layout-analysis .highcharts-game-arc .arc-color .highcharts-area,.dark-mode .board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-area,.dark-mode .event-page-layout-main .highcharts-game-arc .arc-color .highcharts-area,.dark-mode .review-view-component .highcharts-game-arc .arc-color .highcharts-area,.dark-mode .tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-area,.dark-mode .tab-report-component .highcharts-game-arc .arc-color .highcharts-area,.dark-mode .tab-review-component .highcharts-game-arc .arc-color .highcharts-area {
+    fill: hsla(0,0%,100%,.5)
+}
+
+.dark-mode .analysis-layout .highcharts-game-arc .arc-color .highcharts-area.highcharts-negative,.dark-mode .board-layout-analysis .highcharts-game-arc .arc-color .highcharts-area.highcharts-negative,.dark-mode .board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-area.highcharts-negative,.dark-mode .event-page-layout-main .highcharts-game-arc .arc-color .highcharts-area.highcharts-negative,.dark-mode .review-view-component .highcharts-game-arc .arc-color .highcharts-area.highcharts-negative,.dark-mode .tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-area.highcharts-negative,.dark-mode .tab-report-component .highcharts-game-arc .arc-color .highcharts-area.highcharts-negative,.dark-mode .tab-review-component .highcharts-game-arc .arc-color .highcharts-area.highcharts-negative {
+    fill: hsla(0,0%,100%,.2)
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-graph,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-graph,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-graph,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-graph,.review-view-component .highcharts-game-arc .arc-color .highcharts-graph,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-graph,.tab-report-component .highcharts-game-arc .arc-color .highcharts-graph,.tab-review-component .highcharts-game-arc .arc-color .highcharts-graph {
+    stroke: #bebdb9
+}
+
+.dark-mode .analysis-layout .highcharts-game-arc .arc-color .highcharts-graph,.dark-mode .board-layout-analysis .highcharts-game-arc .arc-color .highcharts-graph,.dark-mode .board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-graph,.dark-mode .event-page-layout-main .highcharts-game-arc .arc-color .highcharts-graph,.dark-mode .review-view-component .highcharts-game-arc .arc-color .highcharts-graph,.dark-mode .tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-graph,.dark-mode .tab-report-component .highcharts-game-arc .arc-color .highcharts-graph,.dark-mode .tab-review-component .highcharts-game-arc .arc-color .highcharts-graph {
+    stroke: hsla(0,0%,100%,.5)
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-halo,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-halo,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-halo,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-halo,.review-view-component .highcharts-game-arc .arc-color .highcharts-halo,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-halo,.tab-report-component .highcharts-game-arc .arc-color .highcharts-halo,.tab-review-component .highcharts-game-arc .arc-color .highcharts-halo {
+    display: none
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-hover),.analysis-layout .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-select),.analysis-layout .highcharts-game-arc .arc-color .highcharts-point:not(.key-move),.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-hover),.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-select),.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point:not(.key-move),.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-hover),.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-select),.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point:not(.key-move),.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-hover),.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-select),.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point:not(.key-move),.review-view-component .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-hover),.review-view-component .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-select),.review-view-component .highcharts-game-arc .arc-color .highcharts-point:not(.key-move),.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-hover),.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-select),.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point:not(.key-move),.tab-report-component .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-hover),.tab-report-component .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-select),.tab-report-component .highcharts-game-arc .arc-color .highcharts-point:not(.key-move),.tab-review-component .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-hover),.tab-review-component .highcharts-game-arc .arc-color .highcharts-point:not(.highcharts-point-select),.tab-review-component .highcharts-game-arc .arc-color .highcharts-point:not(.key-move) {
+    opacity: 0
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-point.key-move,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point.key-move,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point.key-move,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point.key-move,.review-view-component .highcharts-game-arc .arc-color .highcharts-point.key-move,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point.key-move,.tab-report-component .highcharts-game-arc .arc-color .highcharts-point.key-move,.tab-review-component .highcharts-game-arc .arc-color .highcharts-point.key-move {
+    opacity: .6
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-point.key-move:hover,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point.key-move:hover,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point.key-move:hover,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point.key-move:hover,.review-view-component .highcharts-game-arc .arc-color .highcharts-point.key-move:hover,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point.key-move:hover,.tab-report-component .highcharts-game-arc .arc-color .highcharts-point.key-move:hover,.tab-review-component .highcharts-game-arc .arc-color .highcharts-point.key-move:hover {
+    opacity: 1
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.review-view-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.tab-report-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.tab-review-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover {
+    opacity: .9
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.review-view-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.tab-report-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.tab-review-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select {
+    opacity: 1;
+    transition: opacity .5s ease
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.analysis-layout .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.review-view-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.review-view-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.tab-report-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.tab-report-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select,.tab-review-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-hover,.tab-review-component .highcharts-game-arc .arc-color .highcharts-point.highcharts-point-select {
+    stroke: transparent
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-point.shift-down,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point.shift-down,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point.shift-down,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point.shift-down,.review-view-component .highcharts-game-arc .arc-color .highcharts-point.shift-down,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point.shift-down,.tab-report-component .highcharts-game-arc .arc-color .highcharts-point.shift-down,.tab-review-component .highcharts-game-arc .arc-color .highcharts-point.shift-down {
+    transform: translateY(-.5rem)
+}
+
+.analysis-layout .highcharts-game-arc .arc-color .highcharts-point.shift-up,.board-layout-analysis .highcharts-game-arc .arc-color .highcharts-point.shift-up,.board-layout.with-analysis .highcharts-game-arc .arc-color .highcharts-point.shift-up,.event-page-layout-main .highcharts-game-arc .arc-color .highcharts-point.shift-up,.review-view-component .highcharts-game-arc .arc-color .highcharts-point.shift-up,.tab-key-moments-component .highcharts-game-arc .arc-color .highcharts-point.shift-up,.tab-report-component .highcharts-game-arc .arc-color .highcharts-point.shift-up,.tab-review-component .highcharts-game-arc .arc-color .highcharts-point.shift-up {
+    transform: translateY(.5rem)
+}
+
+.analysis-layout .highcharts-game-arc .highcharts-graph.highcharts-negative,.board-layout-analysis .highcharts-game-arc .highcharts-graph.highcharts-negative,.board-layout.with-analysis .highcharts-game-arc .highcharts-graph.highcharts-negative,.event-page-layout-main .highcharts-game-arc .highcharts-graph.highcharts-negative,.review-view-component .highcharts-game-arc .highcharts-graph.highcharts-negative,.tab-key-moments-component .highcharts-game-arc .highcharts-graph.highcharts-negative,.tab-report-component .highcharts-game-arc .highcharts-graph.highcharts-negative,.tab-review-component .highcharts-game-arc .highcharts-graph.highcharts-negative {
+    stroke: #312e2b
+}
+
+.dark-mode .analysis-layout .highcharts-game-arc .highcharts-graph.highcharts-negative,.dark-mode .board-layout-analysis .highcharts-game-arc .highcharts-graph.highcharts-negative,.dark-mode .board-layout.with-analysis .highcharts-game-arc .highcharts-graph.highcharts-negative,.dark-mode .event-page-layout-main .highcharts-game-arc .highcharts-graph.highcharts-negative,.dark-mode .review-view-component .highcharts-game-arc .highcharts-graph.highcharts-negative,.dark-mode .tab-key-moments-component .highcharts-game-arc .highcharts-graph.highcharts-negative,.dark-mode .tab-report-component .highcharts-game-arc .highcharts-graph.highcharts-negative,.dark-mode .tab-review-component .highcharts-game-arc .highcharts-graph.highcharts-negative {
+    stroke: hsla(0,0%,100%,.2)
+}
+
+.analysis-layout .highcharts-game-arc .highcharts-area.highcharts-negative,.board-layout-analysis .highcharts-game-arc .highcharts-area.highcharts-negative,.board-layout.with-analysis .highcharts-game-arc .highcharts-area.highcharts-negative,.event-page-layout-main .highcharts-game-arc .highcharts-area.highcharts-negative,.review-view-component .highcharts-game-arc .highcharts-area.highcharts-negative,.tab-key-moments-component .highcharts-game-arc .highcharts-area.highcharts-negative,.tab-report-component .highcharts-game-arc .highcharts-area.highcharts-negative,.tab-review-component .highcharts-game-arc .highcharts-area.highcharts-negative {
+    fill: #312e2b
+}
+
+.analysis-layout .highcharts-game-arc .highcharts-tooltip .highcharts-tooltip-box,.board-layout-analysis .highcharts-game-arc .highcharts-tooltip .highcharts-tooltip-box,.board-layout.with-analysis .highcharts-game-arc .highcharts-tooltip .highcharts-tooltip-box,.event-page-layout-main .highcharts-game-arc .highcharts-tooltip .highcharts-tooltip-box,.review-view-component .highcharts-game-arc .highcharts-tooltip .highcharts-tooltip-box,.tab-key-moments-component .highcharts-game-arc .highcharts-tooltip .highcharts-tooltip-box,.tab-report-component .highcharts-game-arc .highcharts-tooltip .highcharts-tooltip-box,.tab-review-component .highcharts-game-arc .highcharts-tooltip .highcharts-tooltip-box {
+    stroke: #312e2b
+}
+
+.analysis-bestMove {
+    color: #95bb4a
+}
+
+[class$=-highlighted] .analysis-bestMove {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-bestMove:after {
+    background: #95bb4a!important
+}
+
+[class$=-highlighted] .analysis-bestMove:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-bestMove-bg {
+    fill: #95bb4a;
+    background: #95bb4a
+}
+
+.analysis-blunder {
+    color: #ca3431
+}
+
+[class$=-highlighted] .analysis-blunder {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-blunder:after {
+    background: #ca3431!important
+}
+
+[class$=-highlighted] .analysis-blunder:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-blunder-bg {
+    fill: #ca3431;
+    background: #ca3431
+}
+
+.analysis-book {
+    color: #a88865
+}
+
+[class$=-highlighted] .analysis-book {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-book:after {
+    background: #a88865!important
+}
+
+[class$=-highlighted] .analysis-book:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-book-bg {
+    fill: #a88865;
+    background: #a88865
+}
+
+.analysis-brilliant {
+    color: #1baca6
+}
+
+[class$=-highlighted] .analysis-brilliant {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-brilliant:after {
+    background: #1baca6!important
+}
+
+[class$=-highlighted] .analysis-brilliant:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-brilliant-bg {
+    fill: #1baca6;
+    background: #1baca6
+}
+
+.analysis-correct {
+    color: #95bb4a
+}
+
+[class$=-highlighted] .analysis-correct {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-correct:after {
+    background: #95bb4a!important
+}
+
+[class$=-highlighted] .analysis-correct:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-correct-bg {
+    fill: #95bb4a;
+    background: #95bb4a
+}
+
+.analysis-incorrect {
+    color: #c93430
+}
+
+[class$=-highlighted] .analysis-incorrect {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-incorrect:after {
+    background: #c93430!important
+}
+
+[class$=-highlighted] .analysis-incorrect:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-incorrect-bg {
+    fill: #c93430;
+    background: #c93430
+}
+
+.analysis-critical {
+    color: #d6b826
+}
+
+[class$=-highlighted] .analysis-critical {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-critical:after {
+    background: #d6b826!important
+}
+
+[class$=-highlighted] .analysis-critical:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-critical-bg {
+    fill: #d6b826;
+    background: #d6b826
+}
+
+.analysis-default {
+    color: inherit
+}
+
+[class$=-highlighted] .analysis-default {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-default:after {
+    background: inherit!important
+}
+
+[class$=-highlighted] .analysis-default:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-default-bg {
+    fill: inherit;
+    background: inherit
+}
+
+.analysis-excellent {
+    color: #96bc4b
+}
+
+[class$=-highlighted] .analysis-excellent {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-excellent:after {
+    background: #96bc4b!important
+}
+
+[class$=-highlighted] .analysis-excellent:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-excellent-bg {
+    fill: #96bc4b;
+    background: #96bc4b
+}
+
+.analysis-forced {
+    color: #312e2b
+}
+
+[class$=-highlighted] .analysis-forced {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-forced:after {
+    background: #312e2b!important
+}
+
+[class$=-highlighted] .analysis-forced:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-forced-bg {
+    fill: #312e2b;
+    background: #312e2b
+}
+
+.analysis-good {
+    color: #96af8b
+}
+
+[class$=-highlighted] .analysis-good {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-good:after {
+    background: #96af8b!important
+}
+
+[class$=-highlighted] .analysis-good:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-good-bg {
+    fill: #96af8b;
+    background: #96af8b
+}
+
+.analysis-greatFind {
+    color: #5c8bb0
+}
+
+[class$=-highlighted] .analysis-greatFind {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-greatFind:after {
+    background: #5c8bb0!important
+}
+
+[class$=-highlighted] .analysis-greatFind:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-greatFind-bg {
+    fill: #5c8bb0;
+    background: #5c8bb0
+}
+
+.analysis-inaccuracy {
+    color: #f0c15c
+}
+
+[class$=-highlighted] .analysis-inaccuracy {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-inaccuracy:after {
+    background: #f0c15c!important
+}
+
+[class$=-highlighted] .analysis-inaccuracy:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-inaccuracy-bg {
+    fill: #f0c15c;
+    background: #f0c15c
+}
+
+.analysis-missedWin {
+    color: #dbac16
+}
+
+[class$=-highlighted] .analysis-missedWin {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-missedWin:after {
+    background: #dbac16!important
+}
+
+[class$=-highlighted] .analysis-missedWin:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-missedWin-bg {
+    fill: #dbac16;
+    background: #dbac16
+}
+
+.analysis-mistake {
+    color: #e58f2a
+}
+
+[class$=-highlighted] .analysis-mistake {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-mistake:after {
+    background: #e58f2a!important
+}
+
+[class$=-highlighted] .analysis-mistake:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-mistake-bg {
+    fill: #e58f2a;
+    background: #e58f2a
+}
+
+.analysis-miss {
+    color: #ee6b55
+}
+
+[class$=-highlighted] .analysis-miss {
+    color: #fff
+}
+
+[class$=-highlighted] .analysis-miss:after {
+    background: #ee6b55!important
+}
+
+[class$=-highlighted] .analysis-miss:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.analysis-miss-bg {
+    fill: #ee6b55;
+    background: #ee6b55
+}
+
+.dark-mode .analysis-bestMove {
+    color: #95bb4a
+}
+
+[class$=-highlighted] .dark-mode .analysis-bestMove {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-bestMove:after {
+    background: #95bb4a!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-bestMove:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-bestMove-bg {
+    fill: #95bb4a;
+    background: #95bb4a
+}
+
+.dark-mode .analysis-blunder {
+    color: #ca3431
+}
+
+[class$=-highlighted] .dark-mode .analysis-blunder {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-blunder:after {
+    background: #ca3431!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-blunder:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-blunder-bg {
+    fill: #ca3431;
+    background: #ca3431
+}
+
+.dark-mode .analysis-book {
+    color: #a88865
+}
+
+[class$=-highlighted] .dark-mode .analysis-book {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-book:after {
+    background: #a88865!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-book:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-book-bg {
+    fill: #a88865;
+    background: #a88865
+}
+
+.dark-mode .analysis-brilliant {
+    color: #1baca6
+}
+
+[class$=-highlighted] .dark-mode .analysis-brilliant {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-brilliant:after {
+    background: #1baca6!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-brilliant:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-brilliant-bg {
+    fill: #1baca6;
+    background: #1baca6
+}
+
+.dark-mode .analysis-correct {
+    color: #95bb4a
+}
+
+[class$=-highlighted] .dark-mode .analysis-correct {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-correct:after {
+    background: #95bb4a!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-correct:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-correct-bg {
+    fill: #95bb4a;
+    background: #95bb4a
+}
+
+.dark-mode .analysis-incorrect {
+    color: #c93430
+}
+
+[class$=-highlighted] .dark-mode .analysis-incorrect {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-incorrect:after {
+    background: #c93430!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-incorrect:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-incorrect-bg {
+    fill: #c93430;
+    background: #c93430
+}
+
+.dark-mode .analysis-critical {
+    color: #b8b39a
+}
+
+[class$=-highlighted] .dark-mode .analysis-critical:after {
+    background: #b8b39a!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-critical {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-critical:after {
+    background: #d6b826!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-critical:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-critical-bg {
+    fill: #b8b39a;
+    background: #b8b39a
+}
+
+.dark-mode .analysis-default {
+    color: inherit
+}
+
+[class$=-highlighted] .dark-mode .analysis-default {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-default:after {
+    background: inherit!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-default:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-default-bg {
+    fill: inherit;
+    background: inherit
+}
+
+.dark-mode .analysis-excellent {
+    color: #96bc4b
+}
+
+[class$=-highlighted] .dark-mode .analysis-excellent {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-excellent:after {
+    background: #96bc4b!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-excellent:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-excellent-bg {
+    fill: #96bc4b;
+    background: #96bc4b
+}
+
+.dark-mode .analysis-forced {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-forced:after {
+    background: #fff!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-forced {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-forced:after {
+    background: #312e2b!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-forced:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-forced-bg {
+    fill: #fff;
+    background: #fff
+}
+
+.dark-mode .analysis-good {
+    color: #96af8b
+}
+
+[class$=-highlighted] .dark-mode .analysis-good {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-good:after {
+    background: #96af8b!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-good:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-good-bg {
+    fill: #96af8b;
+    background: #96af8b
+}
+
+.dark-mode .analysis-greatFind {
+    color: #5c8bb0
+}
+
+[class$=-highlighted] .dark-mode .analysis-greatFind {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-greatFind:after {
+    background: #5c8bb0!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-greatFind:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-greatFind-bg {
+    fill: #5c8bb0;
+    background: #5c8bb0
+}
+
+.dark-mode .analysis-inaccuracy {
+    color: #f0c15c
+}
+
+[class$=-highlighted] .dark-mode .analysis-inaccuracy {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-inaccuracy:after {
+    background: #f0c15c!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-inaccuracy:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-inaccuracy-bg {
+    fill: #f0c15c;
+    background: #f0c15c
+}
+
+.dark-mode .analysis-missedWin {
+    color: #dbac16
+}
+
+[class$=-highlighted] .dark-mode .analysis-missedWin {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-missedWin:after {
+    background: #dbac16!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-missedWin:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-missedWin-bg {
+    fill: #dbac16;
+    background: #dbac16
+}
+
+.dark-mode .analysis-mistake {
+    color: #e58f2a
+}
+
+[class$=-highlighted] .dark-mode .analysis-mistake {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-mistake:after {
+    background: #e58f2a!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-mistake:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-mistake-bg {
+    fill: #e58f2a;
+    background: #e58f2a
+}
+
+.dark-mode .analysis-miss {
+    color: #ee6b55
+}
+
+[class$=-highlighted] .dark-mode .analysis-miss {
+    color: #fff
+}
+
+[class$=-highlighted] .dark-mode .analysis-miss:after {
+    background: #ee6b55!important
+}
+
+[class$=-highlighted] .dark-mode .analysis-miss:before {
+    background-color: hsla(0,0%,100%,.2)!important
+}
+
+.dark-mode .analysis-miss-bg {
+    fill: #ee6b55;
+    background: #ee6b55
+}
+
+.highcharts-data-labels {
+    opacity: 1!important
+}
+
+.highcharts-tooltip>span {
+    background-color: #fff;
+    border: .1rem solid #333;
+    border-radius: .2rem;
+    padding: .8rem;
+    z-index: 99999!important
+}
+
+chess-board {
+    background-size: 100%;
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+    touch-action: none;
+    width: 100%
+}
+
+chess-board.flipped .piece {
+    /*rtl:ignore*/
+    left: 0
+}
+
+.real-3d chess-board {
+    padding-bottom: 75.1879699248%
+}
+
+.game-list-bold {
+    font-weight: 600
+}
+
+.game-list-header {
+    color: #8b8987;
+    display: flex;
+    font-weight: 300;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    text-transform: uppercase
+}
+
+.dark-mode .game-list-header {
+    color: hsla(0,0%,100%,.4)
+}
+
+.game-list-inactive {
+    opacity: .2;
+    pointer-events: none
+}
+
+.game-list-scrollable {
+    overflow: auto
+}
+
+.game-list-component .game-list-tab {
+    background-color: #e7e6e5
+}
+
+.game-list-component .game-list-tab:hover:not(.game-list-active-tab) {
+    background-color: #dad8d6
+}
+
+.game-list-component .game-list-tab.game-list-active-tab {
+    background-color: #f1f1f1
+}
+
+.dark-mode .game-list-component .game-list-tab {
+    background-color: rgba(0,0,0,.3)
+}
+
+.dark-mode .game-list-component .game-list-tab:hover:not(.game-list-active-tab) {
+    background-color: rgba(0,0,0,.45)
+}
+
+.dark-mode .game-list-component .game-list-tab.game-list-active-tab {
+    background-color: rgba(0,0,0,.2)
+}
+
+.game-list-component {
+    margin-bottom: .4rem
+}
+
+.dark-mode .game-list-component {
+    background-color: rgba(0,0,0,.2)
+}
+
+.game-list-select {
+    background-color: var(--globalTertiaryBackground)
+}
+
+.game-list-badge {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    align-items: center;
+    background-color: #b33430;
+    border-radius: .2rem;
+    color: #fff;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 1.4rem;
+    justify-content: center;
+    line-height: 1;
+    margin-bottom: .8rem;
+    margin-left: auto;
+    margin-left: 1rem;
+    min-width: 1.4rem;
+    position: absolute
+}
+
+.game-list-badge[data-badge-count="0"] {
+    display: none
+}
+
+.game-list-content {
+    flex-grow: 1
+}
+
+.game-list-tab-container {
+    flex-shrink: 0
+}
+
+.game-list-tab {
+    flex-basis: 0
+}
+
+.game-list-content {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0
+}
+
+@media (max-width: 959px) {
+    .game-list-component {
+        flex-basis:0
+    }
+}
+
+.ticker-icon-component {
+    transform: rotate(0deg);
+    transition: .15s
+}
+
+.move-time-time {
+    align-items: center;
+    background-color: #fff;
+    border-radius: .3rem;
+    color: #26211b;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 2rem;
+    height: 100%;
+    justify-content: space-between;
+    min-width: 10rem;
+    overflow: hidden
+}
+
+.move-time-time.move-time-dark {
+    fill: #fff;
+    background-color: #26211b;
+    color: #fff
+}
+
+.move-time-inactive {
+    opacity: .5
+}
+
+.move-time-indicator {
+    font-size: 3rem;
+    height: 100%;
+    width: 4rem
+}
+
+.move-time-icon {
+    flex-shrink: 0;
+    font-size: 2.7rem;
+    height: 2.8rem;
+    width: 2rem
+}
+
+.move-time-icon,.move-time-ticker {
+    margin-left: .5rem
+}
+
+.move-time-content {
+    overflow: hidden;
+    padding: 0 .5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.move-time-iconless .move-time-content {
+    margin-left: auto
+}
+
+@media (min-width: 480px) {
+    .move-time-time {
+        min-width:13.5rem
+    }
+
+    .move-time-icon {
+        font-size: 3.2rem;
+        height: 3.2rem;
+        width: 3.2rem
+    }
+
+    .move-time-content {
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+}
+
+.avatar-component {
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.user-chess-title-component {
+    background-color: #b33430;
+    border-radius: .3rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: .2rem .3rem
+}
+
+.user-flair-icon-component {
+    display: inline-flex
+}
+
+.user-flair-icon-component[href=""] span {
+    cursor: default
+}
+
+.user-username-component {
+    font-size: var(--user-username,1.4rem);
+    font-weight: 600;
+    line-height: 1.3
+}
+
+.user-username-link {
+    cursor: pointer
+}
+
+.user-username-gray {
+    color: #a7a6a2
+}
+
+.user-username-gray.user-username-link:hover {
+    color: #666463
+}
+
+.user-username-darkgray {
+    color: #4b4847
+}
+
+.user-username-darkgray.user-username-link:hover {
+    color: #666564
+}
+
+.user-username-blue,.user-username-blue:hover {
+    color: #3a729c
+}
+
+.user-username-lightgray {
+    color: #bebdb9
+}
+
+.user-username-current,.user-username-current:hover {
+    color: currentColor
+}
+
+.user-username-dark,.user-username-dark:hover {
+    color: hsla(0,0%,100%,.65)
+}
+
+.high-contrast .user-username-dark,.high-contrast .user-username-dark:hover {
+    color: #fff
+}
+
+.user-username-bright {
+    font-weight: 400
+}
+
+.user-username-bright,.user-username-bright-bold {
+    color: var(--globalColorThemeFull)
+}
+
+.user-username-blue-with-dark-mode {
+    color: var(--globalColorThemeBlueToMid)
+}
+
+.user-username-blue-to-water {
+    color: var(--globalColorThemeLink)
+}
+
+.user-tagline-component {
+    align-items: center;
+    display: flex;
+    max-width: 100%;
+    position: relative
+}
+
+.user-tagline-component a.user-tagline-username {
+    cursor: pointer
+}
+
+.user-tagline-component a.user-tagline-not-clickable {
+    cursor: text
+}
+
+.dark-mode .user-tagline-component:not(.light-mode) .user-tagline-rating,.user-tagline-component.dark-mode .user-tagline-rating {
+    color: hsla(0,0%,100%,.65)
+}
+
+.user-tagline-component>*+* {
+    margin-left: .5rem
+}
+
+.user-tagline-username {
+    max-width: 30rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.user-tagline-rating {
+    color: #8c8a88
+}
+
+.user-tagline-darkMode .user-tagline-rating,.user-tagline-rating.user-tagline-dark {
+    color: hsla(0,0%,100%,.65)
+}
+
+.loader-three-bounce-component {
+    text-align: center
+}
+
+.loader-three-bounce-circle .loader-three-bounce-dot {
+    border-radius: 100%
+}
+
+.loader-three-bounce-dot {
+    -webkit-animation: loader-three-bounce-animate 1.4s ease-in-out 0s infinite both;
+    animation: loader-three-bounce-animate 1.4s ease-in-out 0s infinite both;
+    background-color: #8c8a88;
+    border-radius: .1rem;
+    display: inline-block
+}
+
+.loader-three-bounce-bounce1 {
+    -webkit-animation-delay: -.32s;
+    animation-delay: -.32s
+}
+
+.loader-three-bounce-bounce2 {
+    -webkit-animation-delay: -.16s;
+    animation-delay: -.16s
+}
+
+@-webkit-keyframes loader-three-bounce-animate {
+    0%,80%,to {
+        transform: scale(0)
+    }
+
+    40% {
+        transform: scale(1)
+    }
+}
+
+@keyframes loader-three-bounce-animate {
+    0%,80%,to {
+        transform: scale(0)
+    }
+
+    40% {
+        transform: scale(1)
+    }
+}
+
+.icon-button-link {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #666564;
+    display: flex;
+    line-height: .95;
+    margin: 0 .3rem 0 0;
+    padding: 0;
+    position: relative;
+    text-align: left
+}
+
+.icon-button-link:focus,.icon-button-link:hover {
+    color: #4b4847
+}
+
+.icon-button-link:focus .icon-button-icon,.icon-button-link:hover .icon-button-icon {
+    color: #666564
+}
+
+.icon-button-label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: .3rem;
+    max-width: 12rem;
+    word-break: break-word
+}
+
+.icon-button-icon {
+    color: #8b8987;
+    flex-shrink: 0;
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem
+}
+
+.icon-button-blue .icon-button-icon,.icon-button-blue .icon-button-label {
+    color: #0097c7
+}
+
+.icon-button-blue:focus .icon-button-icon,.icon-button-blue:focus .icon-button-label,.icon-button-blue:hover .icon-button-icon,.icon-button-blue:hover .icon-button-label {
+    color: #52b1dc
+}
+
+.icon-button-grey .icon-button-icon,.icon-button-grey .icon-button-label {
+    opacity: .8
+}
+
+.icon-button-red .icon-button-icon,.icon-button-red .icon-button-label {
+    color: #b23330
+}
+
+.icon-button-red:focus .icon-button-icon,.icon-button-red:focus .icon-button-label,.icon-button-red:hover .icon-button-icon,.icon-button-red:hover .icon-button-label {
+    color: #ca3431
+}
+
+.icon-button-translucent .icon-button-icon,.icon-button-translucent .icon-button-label {
+    color: var(--globalColorThemeLow)
+}
+
+.icon-button-translucent:focus,.icon-button-translucent:focus .icon-button-icon,.icon-button-translucent:hover,.icon-button-translucent:hover .icon-button-icon {
+    color: var(--globalColorThemeMid)
+}
+
+.admin-actions-component {
+    display: flex;
+    padding: .5rem 1rem .2rem
+}
+
+.admin-actions-separator {
+    background-color: #dbd9d7;
+    height: 1.5rem;
+    margin: auto .5rem;
+    width: .1rem
+}
+
+.analysis-options-dropdown-component {
+    background-color: #fff;
+    border: .1rem solid #bebdb9;
+    border-radius: .3rem;
+    box-shadow: 0 .6rem 1.2rem rgba(0,0,0,.175);
+    display: none;
+    left: 0;
+    list-style-type: none;
+    margin: .2rem 0 0;
+    min-width: 12.5rem;
+    padding: 2rem 0 .5rem;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    z-index: 1
+}
+
+.analysis-options-dropdown-component li {
+    cursor: pointer;
+    max-width: 12.5rem;
+    overflow: hidden;
+    padding: .2rem 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.analysis-options-dropdown-component li:hover {
+    background-color: #f1f1f1
+}
+
+.analysis-options-dropdown-component .analysis-options-dropdown-close {
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: .4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem
+}
+
+.analysis-options-dropdown-component .analysis-options-dropdown-close:hover {
+    background-color: #f1f1f1
+}
+
+.analysis-options-dropdown-component .analysis-options-dropdown-title {
+    background-color: #dad8d6;
+    color: #666564;
+    padding: 0 0 .4rem 1rem;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.chat-options-dropdown-component {
+    background-color: #fff;
+    border: .1rem solid #bebdb9;
+    border-radius: .3rem;
+    box-shadow: 0 .6rem 1.2rem rgba(0,0,0,.175);
+    display: none;
+    left: 0;
+    list-style-type: none;
+    margin: .2rem 0 0;
+    min-width: 12.5rem;
+    padding: 2rem 0 .5rem;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    z-index: 1
+}
+
+.chat-options-dropdown-component li {
+    cursor: pointer;
+    max-width: 12.5rem;
+    overflow: hidden;
+    padding: .2rem 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.chat-options-dropdown-component li:hover {
+    background-color: #f1f1f1
+}
+
+.chat-options-dropdown-component .chat-options-dropdown-close {
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: .4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem
+}
+
+.chat-options-dropdown-component .chat-options-dropdown-close:hover {
+    background-color: #f1f1f1
+}
+
+.chat-options-dropdown-component .chat-options-dropdown-title {
+    background-color: #dad8d6;
+    color: #666564;
+    padding: 0 0 .4rem 1rem;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.icon-link-link {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #666564;
+    display: flex;
+    line-height: .95;
+    margin: 0 .3rem 0 0;
+    padding: 0;
+    position: relative;
+    text-align: left
+}
+
+.icon-link-link:focus,.icon-link-link:hover {
+    color: #4b4847
+}
+
+.icon-link-link:focus .icon-link-icon,.icon-link-link:hover .icon-link-icon {
+    color: #666564
+}
+
+.icon-link-label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: .3rem;
+    max-width: 12rem;
+    word-break: break-word
+}
+
+.icon-link-icon {
+    color: #8b8987;
+    flex-shrink: 0;
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem
+}
+
+.icon-link-blue .icon-link-icon,.icon-link-blue .icon-link-label {
+    color: #0097c7
+}
+
+.icon-link-blue:focus .icon-link-icon,.icon-link-blue:focus .icon-link-label,.icon-link-blue:hover .icon-link-icon,.icon-link-blue:hover .icon-link-label {
+    color: #52b1dc
+}
+
+.icon-link-grey .icon-link-icon,.icon-link-grey .icon-link-label {
+    opacity: .8
+}
+
+.icon-link-red .icon-link-icon,.icon-link-red .icon-link-label {
+    color: #b23330
+}
+
+.icon-link-red:focus .icon-link-icon,.icon-link-red:focus .icon-link-label,.icon-link-red:hover .icon-link-icon,.icon-link-red:hover .icon-link-label {
+    color: #ca3431
+}
+
+.icon-link-translucent .icon-link-icon,.icon-link-translucent .icon-link-label {
+    color: var(--globalColorThemeLow)
+}
+
+.icon-link-translucent:focus,.icon-link-translucent:focus .icon-link-icon,.icon-link-translucent:hover,.icon-link-translucent:hover .icon-link-icon {
+    color: var(--globalColorThemeMid)
+}
+
+.labeled-icon-button-link {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #666564;
+    display: flex;
+    line-height: .95;
+    margin: 0 .3rem 0 0;
+    padding: 0;
+    position: relative;
+    text-align: left
+}
+
+.labeled-icon-button-link:focus,.labeled-icon-button-link:hover {
+    color: #4b4847
+}
+
+.labeled-icon-button-link:focus .labeled-icon-button-icon,.labeled-icon-button-link:hover .labeled-icon-button-icon {
+    color: #666564
+}
+
+.labeled-icon-button-label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: .3rem;
+    max-width: 12rem;
+    word-break: break-word
+}
+
+.labeled-icon-button-icon {
+    color: #8b8987;
+    flex-shrink: 0;
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem
+}
+
+.labeled-icon-button-blue .labeled-icon-button-icon,.labeled-icon-button-blue .labeled-icon-button-label {
+    color: #0097c7
+}
+
+.labeled-icon-button-blue:focus .labeled-icon-button-icon,.labeled-icon-button-blue:focus .labeled-icon-button-label,.labeled-icon-button-blue:hover .labeled-icon-button-icon,.labeled-icon-button-blue:hover .labeled-icon-button-label {
+    color: #52b1dc
+}
+
+.labeled-icon-button-grey .labeled-icon-button-icon,.labeled-icon-button-grey .labeled-icon-button-label {
+    opacity: .8
+}
+
+.labeled-icon-button-red .labeled-icon-button-icon,.labeled-icon-button-red .labeled-icon-button-label {
+    color: #b23330
+}
+
+.labeled-icon-button-red:focus .labeled-icon-button-icon,.labeled-icon-button-red:focus .labeled-icon-button-label,.labeled-icon-button-red:hover .labeled-icon-button-icon,.labeled-icon-button-red:hover .labeled-icon-button-label {
+    color: #ca3431
+}
+
+.labeled-icon-button-translucent .labeled-icon-button-icon,.labeled-icon-button-translucent .labeled-icon-button-label {
+    color: var(--globalColorThemeLow)
+}
+
+.labeled-icon-button-translucent:focus,.labeled-icon-button-translucent:focus .labeled-icon-button-icon,.labeled-icon-button-translucent:hover,.labeled-icon-button-translucent:hover .labeled-icon-button-icon {
+    color: var(--globalColorThemeMid)
+}
+
+.labeled-icon-link-link {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #666564;
+    display: flex;
+    line-height: .95;
+    margin: 0 .3rem 0 0;
+    padding: 0;
+    position: relative;
+    text-align: left
+}
+
+.labeled-icon-link-link:focus,.labeled-icon-link-link:hover {
+    color: #4b4847
+}
+
+.labeled-icon-link-link:focus .labeled-icon-link-icon,.labeled-icon-link-link:hover .labeled-icon-link-icon {
+    color: #666564
+}
+
+.labeled-icon-link-label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: .3rem;
+    max-width: 12rem;
+    word-break: break-word
+}
+
+.labeled-icon-link-icon {
+    color: #8b8987;
+    flex-shrink: 0;
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem
+}
+
+.labeled-icon-link-blue .labeled-icon-link-icon,.labeled-icon-link-blue .labeled-icon-link-label {
+    color: #0097c7
+}
+
+.labeled-icon-link-blue:focus .labeled-icon-link-icon,.labeled-icon-link-blue:focus .labeled-icon-link-label,.labeled-icon-link-blue:hover .labeled-icon-link-icon,.labeled-icon-link-blue:hover .labeled-icon-link-label {
+    color: #52b1dc
+}
+
+.labeled-icon-link-grey .labeled-icon-link-icon,.labeled-icon-link-grey .labeled-icon-link-label {
+    opacity: .8
+}
+
+.labeled-icon-link-red .labeled-icon-link-icon,.labeled-icon-link-red .labeled-icon-link-label {
+    color: #b23330
+}
+
+.labeled-icon-link-red:focus .labeled-icon-link-icon,.labeled-icon-link-red:focus .labeled-icon-link-label,.labeled-icon-link-red:hover .labeled-icon-link-icon,.labeled-icon-link-red:hover .labeled-icon-link-label {
+    color: #ca3431
+}
+
+.labeled-icon-link-translucent .labeled-icon-link-icon,.labeled-icon-link-translucent .labeled-icon-link-label {
+    color: var(--globalColorThemeLow)
+}
+
+.labeled-icon-link-translucent:focus,.labeled-icon-link-translucent:focus .labeled-icon-link-icon,.labeled-icon-link-translucent:hover,.labeled-icon-link-translucent:hover .labeled-icon-link-icon {
+    color: var(--globalColorThemeMid)
+}
+
+.user-actions-component {
+    align-items: center;
+    display: flex
+}
+
+.user-actions-icons-list {
+    display: flex;
+    width: 100%
+}
+
+.user-actions-more {
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    color: #8b8987;
+    display: flex;
+    font-size: 1.4rem;
+    height: 3rem;
+    margin-left: auto
+}
+
+.user-actions-more:hover,.user-actions-more:hover span {
+    color: #656565
+}
+
+.user-actions-caret {
+    margin-top: .3rem
+}
+
+.user-actions-caret span {
+    font-size: 1.8rem;
+    height: 1.8rem;
+    width: 1.8rem
+}
+
+.user-actions-buttonsList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.online-status-component {
+    bottom: 0;
+    height: 30%;
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    position: absolute;
+    right: 0;
+    width: 30%
+}
+
+.online-status-online {
+    background-color: #6c9d41
+}
+
+.online-status-live {
+    background-color: #e58f2a
+}
+
+.presence-square-component {
+    bottom: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    z-index: 1
+}
+
+.presence-square-component .presence-square-square {
+    height: 3rem;
+    width: 3rem
+}
+
+.presence-square-component .presence-square-round {
+    border-top-left-radius: .5rem
+}
+
+.presence-square-component .presence-square-red {
+    background: #ca3431
+}
+
+.presence-square-component .presence-square-green {
+    background: #6c9d41
+}
+
+.user-avatar-component {
+    display: flex;
+    flex-shrink: 0;
+    height: 5rem;
+    position: relative;
+    width: 5rem
+}
+
+.user-avatar-image {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.user-flair-status-component {
+    line-height: 1.2;
+    margin: .3em 0;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.user-lifetime-score-component {
+    align-items: center;
+    color: #666564;
+    display: inline-flex;
+    font-weight: 600;
+    height: 1.4rem;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    overflow: hidden
+}
+
+.user-lifetime-score-component>span:first-child {
+    margin-left: 0
+}
+
+.user-lifetime-score-component>:not(.user-lifetime-score-tagline) {
+    display: flex;
+    margin-left: .2rem;
+    margin-right: .2rem
+}
+
+.user-lifetime-score-win {
+    color: #7fa650
+}
+
+.user-lifetime-score-lose {
+    color: #ca3431
+}
+
+.user-lifetime-score-tagline {
+    margin-left: .3rem;
+    max-width: 20rem
+}
+
+.user-lifetime-score-icon {
+    font-size: 1.6rem;
+    height: 1.6rem;
+    justify-content: center;
+    width: 1.6rem
+}
+
+.user-rating-component {
+    align-items: center;
+    display: flex
+}
+
+.user-rating-icon {
+    margin-left: -.5rem
+}
+
+.user-rating-icon span {
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem
+}
+
+.user-rating-rating {
+    color: #26211b;
+    font-size: 1.4rem;
+    font-weight: 700
+}
+
+.presence-button-component {
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-end
+}
+
+.presence-button-component .staffGreen {
+    background: #6c9d41
+}
+
+.presence-button-component .staffGreen:hover {
+    background: #76ab47!important
+}
+
+.presence-button-hidden,.presence-button-placeholder,.presence-button-visible {
+    color: inherit
+}
+
+.presence-button-narrow {
+    max-width: 3rem
+}
+
+.presence-button-challengeIconOnly,.presence-button-watchIconOnly {
+    background: transparent;
+    color: #b23330;
+    height: 1.9rem!important
+}
+
+.presence-button-challengeIconOnly {
+    color: #4e7838
+}
+
+.user-popover-popover {
+    border-radius: .3rem;
+    box-shadow: .2rem .2rem .8rem rgba(0,0,0,.5);
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 9001
+}
+
+.user-popover-popover.user-popover-bottom {
+    margin-top: .5rem
+}
+
+.user-popover-popover.user-popover-top {
+    margin-bottom: .5rem
+}
+
+.user-popover-component {
+    background-color: #fff;
+    border-radius: .3rem;
+    color: #8c8a88;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    overflow: hidden;
+    width: 32rem
+}
+
+.user-popover-avatar-placeholder {
+    background-color: #d8d8d8;
+    height: 5rem;
+    width: 5rem
+}
+
+.user-popover-profile {
+    padding: 1.5rem 1.5rem 0
+}
+
+.user-popover-meta {
+    display: grid;
+    grid-template-columns: 5rem 1fr repeat(2,auto);
+    margin-bottom: 1.5rem
+}
+
+.user-popover-info {
+    margin-left: 1.5rem;
+    overflow: hidden
+}
+
+.user-popover-onlive {
+    color: #e6912c;
+    font-weight: 600
+}
+
+.user-popover-online {
+    color: #769656;
+    font-weight: 600
+}
+
+.user-popover-status {
+    margin-left: 1rem;
+    text-align: right
+}
+
+.user-popover-details {
+    display: flex;
+    flex-direction: column
+}
+
+.user-popover-secondary {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    min-height: 1.3rem
+}
+
+.user-popover-loader {
+    margin: 0;
+    text-align: left
+}
+
+.user-popover-actions {
+    background-color: #f1f1f1;
+    flex: 0 0 4rem;
+    padding: .5rem 1rem
+}
+
+.user-popover-ratings {
+    display: flex
+}
+
+.user-popover-ratings>span {
+    padding-right: .7rem
+}
+
+.user-popover-ratings>span:last-child {
+    padding-right: 0
+}
+
+.user-popover-confirm {
+    align-items: center;
+    background-color: #fff;
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.user-popover-confirm p {
+    margin: 1.5rem;
+    text-align: center
+}
+
+.user-popover-confirm button {
+    margin-right: .5rem
+}
+
+.user-popover-moderator-message {
+    margin-top: .5rem;
+    width: 100%
+}
+
+.user-popover-badge {
+    align-self: start;
+    display: block
+}
+
+.user-popover-badge img {
+    height: 2.8rem;
+    width: 3.8rem
+}
+
+.user-popover-placeholder-popover {
+    border-radius: .3rem;
+    box-shadow: .2rem .2rem .8rem rgba(0,0,0,.5);
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 9001
+}
+
+.user-popover-placeholder-popover.user-popover-bottom {
+    margin-top: .5rem
+}
+
+.user-popover-placeholder-popover.user-popover-top {
+    margin-bottom: .5rem
+}
+
+.user-popover-placeholder-component {
+    background-color: #fff;
+    border-radius: .3rem;
+    color: #8b8987;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    overflow: hidden;
+    width: 32rem
+}
+
+.user-popover-placeholder-profile {
+    border-bottom: 4rem solid #f1f1f1;
+    padding: 1.5rem 1.5rem 4.8rem
+}
+
+.user-popover-placeholder-avatar {
+    background-color: #dad8d6;
+    float: left;
+    height: 5rem;
+    margin-right: 1.5rem;
+    width: 5rem
+}
+
+.user-popover-placeholder-info {
+    font-size: 1.5rem;
+    font-weight: 600
+}
+
+.player-component {
+    display: flex;
+    flex: 1
+}
+
+.player-component .player-tagline {
+    margin: 0 0 0 1rem;
+    width: 100%
+}
+
+.player-component .player-clock {
+    border-radius: .3rem;
+    font-size: 2.2rem;
+    height: 4rem;
+    line-height: 3.8rem;
+    max-width: 14rem;
+    min-width: 12rem;
+    padding-right: 1rem;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 25%
+}
+
+.sidebar-tabs-component {
+    background-color: var(--globalSecondaryBackground);
+    border-radius: .5rem .5rem 0 0;
+    display: flex;
+    flex: 0 0 auto
+}
+
+.sidebar-tabs-tab {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    height: 5rem;
+    min-width: 0;
+    padding: .3rem 0;
+    position: relative;
+    text-align: center
+}
+
+.sidebar-tabs-tab:first-child {
+    border-radius: .5rem 0 0 0
+}
+
+.sidebar-tabs-tab:last-child {
+    border-radius: 0 .5rem 0 0
+}
+
+.sidebar-tabs-tab:not(.sidebar-tabs-active) {
+    background-color: var(--globalTertiaryBackground)
+}
+
+.sidebar-tabs-tab:not(.sidebar-tabs-active):hover {
+    background-color: none;
+    cursor: pointer
+}
+
+.sidebar-tabs-tab .sidebar-tabs-icon {
+    color: var(--globalColorThemeLow);
+    display: block;
+    font-size: 2.8rem;
+    height: 2.6rem
+}
+
+.sidebar-tabs-tab .sidebar-tabs-label {
+    color: var(--globalColorThemeLow);
+    font-size: 1.25rem;
+    overflow: hidden;
+    padding: 0 .3rem;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.sidebar-loader-component,.sidebar-loader-content {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.sidebar-view-component {
+    background-color: var(--globalBackground);
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .1rem 0 rgba(0,0,0,.2);
+    color: var(--globalColorThemeMid);
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    font-size: 1.3rem;
+    justify-content: space-between;
+    max-height: 100%
+}
+
+.sidebar-view-component.sidebar-view-with-game-list {
+    max-height: calc(100% - 3rem)
+}
+
+.sidebar-view-component input,.sidebar-view-component textarea {
+    color: var(--globalColorThemeMid)
+}
+
+.sidebar-view-content {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    min-height: 0
+}
+
+.sidebar-view-content>:first-child {
+    flex: 1;
+    height: calc(100% - 12rem);
+    overflow: auto
+}
+
+.sidebar-component-enter-active,.sidebar-component-leave-active {
+    transition: all .2s ease-out
+}
+
+.sidebar-component-enter,.sidebar-component-leave-active {
+    opacity: 0
+}
+
+@media (max-width: 959px) {
+    .game-controls-primary-float {
+        background-color:#f1f1f1;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom));
+        position: fixed;
+        width: 40rem;
+        z-index: 15
+    }
+
+    .dark-mode .game-controls-primary-float {
+        background-color: #262421
+    }
+}
+
+.game-controls-primary-component {
+    display: flex;
+    width: 100%
+}
+
+.game-controls-primary-button {
+    flex-grow: 1;
+    margin: 0 .1rem;
+    position: relative
+}
+
+.game-controls-primary-badge {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    align-items: center;
+    background-color: #b33430;
+    border-radius: .2rem;
+    color: #fff;
+    display: flex;
+    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    height: 1.4rem;
+    justify-content: center;
+    line-height: 1;
+    margin-left: auto;
+    min-width: 1.4rem;
+    padding-top: .5rem;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.game-controls-primary-badge[data-badge-count="0"] {
+    display: none
+}
+
+.game-controls-primary-button {
+    flex: 1 1 0
+}
+
+.game-controls-primary-component {
+    padding-bottom: 1rem
+}
+
+.game-controls-secondary-button-component {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%
+}
+
+.game-controls-secondary-button-button {
+    background-color: transparent;
+    border: none;
+    color: var(--globalColorThemeLow);
+    margin: 0;
+    padding: 0
+}
+
+.game-controls-secondary-button-button:disabled {
+    opacity: .75
+}
+
+.game-controls-secondary-button-button:hover:not(:disabled) {
+    color: var(--globalColorThemeMid)
+}
+
+.game-controls-secondary-button-icon {
+    color: currentColor;
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem
+}
+
+.game-controls-secondary-button-button:disabled {
+    opacity: .5;
+    pointer-events: none
+}
+
+.game-controls-secondary-component {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%
+}
+
+.game-controls-secondary-button {
+    background-color: transparent;
+    border: none;
+    color: var(--globalColorThemeLow);
+    margin: 0;
+    padding: 0
+}
+
+.game-controls-secondary-button:disabled {
+    opacity: .75;
+    pointer-events: none
+}
+
+.game-controls-secondary-button:hover:not(:disabled) {
+    color: var(--globalColorThemeMid)
+}
+
+.game-controls-secondary-icon {
+    color: currentColor;
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem
+}
+
+.game-controls-secondary-component {
+    justify-content: space-between;
+    padding: 0
+}
+
+.game-controls-view-component {
+    background-color: var(--globalSecondaryBackground);
+    border-radius: 0 0 .5rem .5rem;
+    border-top: 1px solid var(--globalBorder);
+    padding: 1rem
+}
+
+.captured-pieces-captured-pieces {
+    display: block
+}
+
+.captured-pieces-vertical span {
+    display: block;
+    margin-bottom: .5rem
+}
+
+.captured-pieces-hidden {
+    display: none
+}
+
+.captured-pieces-cpiece {
+    background-image: url(/bundles/web/images/sprites/captured-pieces.8dae6056.png);
+    background-repeat: no-repeat;
+    background-size: 68.3rem 61.1rem;
+    display: inline-block;
+    margin-right: .3rem
+}
+
+.captured-pieces-score {
+    background-color: transparent;
+    background-image: none;
+    color: hsla(0,0%,100%,.4);
+    line-height: 1.5;
+    margin-left: .2rem;
+    padding: 0;
+    vertical-align: top
+}
+
+/*rtl:begin:ignore*/
+.captured-pieces-b-pawn,.captured-pieces-w-pawn {
+    height: 1.7rem;
+    width: 1.3rem
+}
+
+.captured-pieces-b-pawn {
+    background-position: 0 -59.4rem
+}
+
+.captured-pieces-w-pawn {
+    background-position: -36rem -59.4rem
+}
+
+.captured-pieces-b-2-pawns,.captured-pieces-w-2-pawns {
+    height: 1.7rem;
+    width: 2rem
+}
+
+.captured-pieces-b-2-pawns {
+    background-position: 0 -56.9rem
+}
+
+.captured-pieces-w-2-pawns {
+    background-position: -36rem -56.9rem
+}
+
+.captured-pieces-b-3-pawns,.captured-pieces-w-3-pawns {
+    height: 1.7rem;
+    width: 2.7rem
+}
+
+.captured-pieces-b-3-pawns {
+    background-position: 0 -54.4rem
+}
+
+.captured-pieces-w-3-pawns {
+    background-position: -36rem -54.4rem
+}
+
+.captured-pieces-b-4-pawns,.captured-pieces-w-4-pawns {
+    height: 1.7rem;
+    width: 3.4rem
+}
+
+.captured-pieces-b-4-pawns {
+    background-position: 0 -51.9rem
+}
+
+.captured-pieces-w-4-pawns {
+    background-position: -36rem -51.9rem
+}
+
+.captured-pieces-b-5-pawns,.captured-pieces-w-5-pawns {
+    height: 1.7rem;
+    width: 4.1rem
+}
+
+.captured-pieces-b-5-pawns {
+    background-position: 0 -49.4rem
+}
+
+.captured-pieces-w-5-pawns {
+    background-position: -36rem -49.4rem
+}
+
+.captured-pieces-b-6-pawns,.captured-pieces-w-6-pawns {
+    height: 1.7rem;
+    width: 4.8rem
+}
+
+.captured-pieces-b-6-pawns {
+    background-position: 0 -46.9rem
+}
+
+.captured-pieces-w-6-pawns {
+    background-position: -36rem -46.9rem
+}
+
+.captured-pieces-b-7-pawns,.captured-pieces-w-7-pawns {
+    height: 1.7rem;
+    width: 5.5rem
+}
+
+.captured-pieces-b-7-pawns {
+    background-position: 0 -44.4rem
+}
+
+.captured-pieces-w-7-pawns {
+    background-position: -36rem -44.4rem
+}
+
+.captured-pieces-b-8-pawns,.captured-pieces-w-8-pawns {
+    height: 1.7rem;
+    width: 6.2rem
+}
+
+.captured-pieces-b-8-pawns {
+    background-position: 0 -41.9rem
+}
+
+.captured-pieces-w-8-pawns {
+    background-position: -36rem -41.9rem
+}
+
+.captured-pieces-b-bishop,.captured-pieces-w-bishop {
+    height: 1.8rem;
+    width: 1.5rem
+}
+
+.captured-pieces-b-bishop {
+    background-position: -6.7rem -44.3rem
+}
+
+.captured-pieces-w-bishop {
+    background-position: -42.7rem -44.3rem
+}
+
+.captured-pieces-b-2-bishops,.captured-pieces-w-2-bishops {
+    height: 1.9rem;
+    width: 2.3rem
+}
+
+.captured-pieces-b-2-bishops {
+    background-position: -6.7rem -41.7rem
+}
+
+.captured-pieces-w-2-bishops {
+    background-position: -42.7rem -41.7rem
+}
+
+.captured-pieces-b-knight,.captured-pieces-w-knight {
+    height: 1.9rem;
+    width: 1.6rem
+}
+
+.captured-pieces-b-knight {
+    background-position: -9.5rem -44.2rem
+}
+
+.captured-pieces-w-knight {
+    background-position: -45.4rem -44.2rem
+}
+
+.captured-pieces-b-2-knights,.captured-pieces-w-2-knights {
+    height: 1.9rem;
+    width: 2.3rem
+}
+
+.captured-pieces-b-2-knights {
+    background-position: -9.5rem -41.7rem
+}
+
+.captured-pieces-w-2-knights {
+    background-position: -45.4rem -41.7rem
+}
+
+.captured-pieces-b-rook,.captured-pieces-w-rook {
+    height: 1.7rem;
+    width: 1.5rem
+}
+
+.captured-pieces-b-rook {
+    background-position: -12rem -44.4rem
+}
+
+.captured-pieces-w-rook {
+    background-position: -48rem -44.4rem
+}
+
+.captured-pieces-b-2-rooks,.captured-pieces-w-2-rooks {
+    height: 1.7rem;
+    width: 2.3rem
+}
+
+.captured-pieces-b-2-rooks {
+    background-position: -12rem -41.9rem
+}
+
+.captured-pieces-w-2-rooks {
+    background-position: -48rem -41.9rem
+}
+
+.captured-pieces-b-queen,.captured-pieces-w-queen {
+    height: 1.9rem;
+    width: 1.8rem
+}
+
+.captured-pieces-b-queen {
+    background-position: -14.5rem -41.7rem
+}
+
+.captured-pieces-w-queen {
+    background-position: -50.4rem -41.7rem
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),all and (min-resolution:192dpi),all and (min-resolution:2dppx) {
+    .captured-pieces-cpiece {
+        background-size:34.2rem 30.6rem
+    }
+
+    .captured-pieces-b-pawn {
+        background-position: 0 -17.6rem
+    }
+
+    .captured-pieces-w-pawn {
+        background-position: -18rem -17.6rem
+    }
+
+    .captured-pieces-b-2-pawns {
+        background-position: 0 -15.1rem
+    }
+
+    .captured-pieces-w-2-pawns {
+        background-position: -18rem -15.1rem
+    }
+
+    .captured-pieces-b-3-pawns {
+        background-position: 0 -12.6rem
+    }
+
+    .captured-pieces-w-3-pawns {
+        background-position: -18rem -12.6rem
+    }
+
+    .captured-pieces-b-4-pawns {
+        background-position: 0 -10.1rem
+    }
+
+    .captured-pieces-w-4-pawns {
+        background-position: -18rem -10.1rem
+    }
+
+    .captured-pieces-b-5-pawns {
+        background-position: 0 -7.6rem
+    }
+
+    .captured-pieces-w-5-pawns {
+        background-position: -18rem -7.6rem
+    }
+
+    .captured-pieces-b-6-pawns {
+        background-position: 0 -5.1rem
+    }
+
+    .captured-pieces-w-6-pawns {
+        background-position: -18rem -5.1rem
+    }
+
+    .captured-pieces-b-7-pawns {
+        background-position: 0 -2.6rem
+    }
+
+    .captured-pieces-w-7-pawns {
+        background-position: -18rem -2.6rem
+    }
+
+    .captured-pieces-b-8-pawns {
+        background-position: 0 -.1rem
+    }
+
+    .captured-pieces-w-8-pawns {
+        background-position: -18rem -.1rem
+    }
+
+    .captured-pieces-b-bishop {
+        background-position: -6.7rem -2.5rem
+    }
+
+    .captured-pieces-w-bishop {
+        background-position: -24.7rem -2.5rem
+    }
+
+    .captured-pieces-b-2-bishops {
+        background-position: -6.7rem .1rem
+    }
+
+    .captured-pieces-w-2-bishops {
+        background-position: -24.7rem .1rem
+    }
+
+    .captured-pieces-b-knight {
+        background-position: -9.5rem -2.4rem
+    }
+
+    .captured-pieces-w-knight {
+        background-position: -27.5rem -2.4rem
+    }
+
+    .captured-pieces-b-2-knights {
+        background-position: -9.5rem .1rem
+    }
+
+    .captured-pieces-w-2-knights {
+        background-position: -27.5rem .1rem
+    }
+
+    .captured-pieces-b-rook {
+        background-position: -12.1rem -2.6rem
+    }
+
+    .captured-pieces-w-rook {
+        background-position: -30.1rem -2.6rem
+    }
+
+    .captured-pieces-b-2-rooks {
+        background-position: -12rem -.1rem
+    }
+
+    .captured-pieces-w-2-rooks {
+        background-position: -30rem -.1rem
+    }
+
+    .captured-pieces-b-queen {
+        background-position: -14.5rem .1rem
+    }
+
+    .captured-pieces-w-queen {
+        background-position: -32.5rem .1rem
+    }
+}
+
+/*rtl:end:ignore*/
+.eco-opening-panel {
+    color: var(--globalColorThemeMid);
+    height: 4rem;
+    justify-content: space-between
+}
+
+.eco-opening-panel,.eco-opening-panel .eco-opening-links {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0
+}
+
+.eco-opening-panel.eco-opening-variant .eco-opening-links {
+    display: none
+}
+
+.eco-opening-panel .eco-opening-name {
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    overflow: hidden;
+    padding-left: 1.6rem;
+    padding-right: 1rem;
+    position: relative;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: pre
+}
+
+.eco-opening-panel .eco-opening-explorer,.eco-opening-panel .eco-opening-opening {
+    padding-left: .5rem
+}
+
+.eco-opening-panel .eco-opening-explorer:hover,.eco-opening-panel .eco-opening-opening:hover {
+    color: var(--globalColorThemeFull)
+}
+
+.eco-opening-panel .eco-opening-explorer:not([href]),.eco-opening-panel .eco-opening-opening:not([href]) {
+    color: inherit;
+    cursor: default;
+    opacity: .5
+}
+
+.eco-opening-panel .eco-opening-explorer {
+    padding-right: 1rem
+}
+
+.eco-opening-panel .eco-opening-icon {
+    font-size: 2.3rem;
+    height: 2.3rem;
+    width: 2.3rem
+}
+
+.eco-opening-panel:hover .eco-opening-tooltip {
+    display: block;
+    opacity: 1
+}
+
