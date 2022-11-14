@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" dir="ltr" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" class="user-logged-in">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# game: http://ogp.me/ns/game#">
+    <meta charset="utf-8" />
+
+    <meta name="description" content="Analyze your chess games with the strongest chess engine in the world - Stockfish. You can also use natural language analysis to get the most human understanding of your game." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <link rel="preconnect" href="//www.chess.com">
+
+    <link rel="dns-prefetch" href="//www.chess.com">
+
+    <link rel="preconnect" href="https://config.playwire.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.intergi.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.intergient.com" crossorigin />
+    <link rel="preconnect" href="https://securepubads.g.doubleclick.net" crossorigin />
+    <link rel="preconnect" href="https://cdn.playwire.com" crossorigin />
+    <link rel="preconnect" href="https://z.moatads.com" crossorigin />
+
+    <link as="font" crossorigin="crossorigin" href="/bundles/web/fonts/chessglyph-new.11d668b6.woff2" rel="preload" type="font/woff2">
+
+    <link as="font" crossorigin="crossorigin" href="/bundles/web/fonts/montserrat-700.2213e098.woff2" rel="preload" type="font/woff2">
+
+    <link as="font" crossorigin="crossorigin" href="/bundles/web/fonts/montserrat-800.2d88ac8b.woff2" rel="preload" type="font/woff2">
+
+
+
+
+    <link rel="icon" href="/bundles/web/favicons/favicon.8c2255ae.ico" sizes="any">
+
+    <link rel="icon" href="/bundles/web/favicons/favicon.11c6b6d5.svg" type="image/svg+xml">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/bundles/web/favicons/apple-touch-icon.f72d3fd3.png">
+
+    <link rel="mask-icon" href="/bundles/web/favicons/safari-pinned-tab.1bf62bbf.svg" color="#4E7838">
+
+
+
+
+
+    <link href="/bundles/app/css/base.client.1457bbad.css" type="text/css" rel="stylesheet" />
+
+
+
+
+
+    <link data-href="/bundles/app/css/alerts.client.2e331eae.css" type="text/css" rel="stylesheet" />
+
+
+
+
+
+    <link href="/bundles/app/css/chess-ads.client.8dc5a845.css" type="text/css" rel="stylesheet" />
+
+
+
+    <meta name="language-banner-styles" content="/bundles/app/css/language-banner.client.6a9cf293.css">
+    <meta name="language-banner-scripts" content="/bundles/app/js/language-banner.client.90d3ede2.js">
+
+
+
+
+    <link href="/bundles/app/css/checkmate.client.13c05815.css" type="text/css" rel="stylesheet" />
+
+
+
+
+
+    <link href="/bundles/app/css/core.client.7702f310.css" type="text/css" rel="stylesheet" />
+
+
+
+
+    <link href="/bundles/app/css/navigation.client.fd5f0bc0.css" type="text/css" rel="stylesheet" />
+
+
+
+
+
+    <link href="/bundles/app/css/board-layout-new.client.f7f6ae37.css" type="text/css" rel="stylesheet" />
+
+
+
+
+    <link rel="preload" href="/chess-themes/boards/green/150.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/wp.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/wn.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/wb.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/wr.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/wq.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/wk.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/bp.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/bn.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/bb.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/br.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/bq.png" as="image" />
+    <link rel="preload" href="/chess-themes/pieces/neo/150/bk.png" as="image" />
+
+
+    <link href=/bundles/app/css/board-default.client.9f54b205.css type=text/css rel=stylesheet />
+
+    <meta name="theme-color" content="#312E2B" />
+
+
+    <title>Chess Analysis Board and PGN Editor - Chess.com</title>
+
+
+    <meta property="og:title" content="Chess Analysis Board and PGN Editor" />
+
+    <meta property="fb:app_id" content="429665630433565" />
+
+    <meta property="og:description" content="Analyze your chess games with the strongest chess engine in the world - Stockfish. You can also use natural language analysis to get the most human understanding of your game." />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:site_name" content="Chess.com" />
+
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+
+
+    <script>
+        !window.chrome && document.querySelector('html').classList.add('cls-board')
+    </script>
+
+
+
+
+
+    <script>
+        window.chesscom = window.chesscom || {};
+
+
+
+
+        window.chesscom.features = ['ads_playwire_ramp', 'ads_playwire_ramp_web', 'amplitude_domain_proxy', 'blogs_modern_featuring_write', 'chessboard_board_images_palette', 'diagram_board_effects', 'engine_animation_fix', 'evaluation_line_empty_fix', 'events_search_v2', 'gift_modal_products_refactor', 'gift_modal_tax_included_redirect', 'gift_page_price_display_fix', 'home_settings_add_leagues', 'home_re_add_quick_links', 'home_re_add_old_features', 'marketing_middleware_serverside_device_id_generation', 'notification_modal_amplitude', 'payments_hide_gift_email', 'payments_paypal_upgrade', 'payments_pre_september_price_change', 'refactored_vml_web_component', 'sanction_russia_flag', 'tax_breakdown_in_callback', 'tinymce_editor_beta', 'toaster_center_beta', 'toaster_center_beta_offline_challenges', 'today_callback_rework', 'video_puzzles_rewards', 'web_client_stockfish_15'];
+    </script>
+
+</head>
+
+
+
+
+
+<body class=" dark-mode mobile-bg   
+  board-layout
+        with-players        with-evaluation" onkeydown="if (event.keyCode === 9) this.classList.add('keyboard-navigation-in-use')" onmousedown="this.classList.remove('keyboard-navigation-in-use')">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQJVC73" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class="board-layout-nav">
+
+        <header id="tb" class="toolbar-new-wrapper ">
+            <div class="toolbar-menu-area toolbar-menu-area-left">
+                <div class="toolbar-action toggle open" data-mobile-nav-toggle>
+                    <span class="icon-font-chess menu toolbar-action-icon"></span>
+                </div>
+
+                <a href="" class="link chess-logo-wrapper sprite chess-logo" aria-label="Chess.com - Play Chess Online">
+                </a>
+            </div>
+
+
+            <div class="toolbar-menu-area">
+
+
+                <div class="toolbar-action-wrapper">
+                    <a href="" class="toolbar-action play" aria-label="My Turn" data-toolbar-play>
+                        <span class="icon-font-chess chess-move toolbar-action-icon"></span>
+
+                        <span class="navigation-badge-component" data-badge="games" data-badge-count="0"></span>
+                    </a>
+
+                    <div data-popover-play-wrapper class="popover-wrapper popover-play-wrapper">
+                        <div data-popover-play></div>
+                    </div>
+                </div>
+
+                <div class="toolbar-action-wrapper">
+                    <a href="" class="toolbar-action messages" aria-label="Messages" data-toolbar-messages>
+                        <span class="icon-font-chess mail-alt toolbar-action-icon"></span>
+
+                        <span class="navigation-badge-component" data-badge="messages" data-badge-count="0"></span>
+                    </a>
+
+                    <div data-popover-messages-wrapper class="popover-wrapper popover-messages-wrapper">
+                        <div data-popover-messages></div>
+                    </div>
+                </div>
+
+                <div class="toolbar-action-wrapper notifications">
+                    <button type="button" class="toolbar-action" aria-label="Notifications" data-toolbar-new-notifications>
+                        <span class="icon-font-chess bell toolbar-action-icon"></span>
+
+                        <span class="navigation-badge-component" data-badge="alerts" data-badge-count="0"></span>
+                    </button>
+
+                    <div data-popover-notifications-wrapper class="popover-wrapper popover-notifications-wrapper">
+                        <div data-popover-notifications></div>
+                    </div>
+                </div>
+
+                <div class="toolbar-action-wrapper">
+                    <a aria-label="Settings" class="toolbar-action settings" data-toolbar-new-settings href="">
+                        <span class="icon-font-chess circle-gearwheel toolbar-action-icon"></span>
+                    </a>
+
+                    <div data-popover-settings-wrapper class="popover-wrapper popover-settings-wrapper">
+                        <div data-popover-settings></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+        <div id="login-register-modal"></div>
+
+        <div id="shareable-game-url-modal"></div>
+
+        <div id="message-modal"></div>
+
+        <div id="free-diamond-month-modal"></div>
+
+        <div id="first-time-modal"></div>
+
+        <div id="achievements-modal"></div>
+
+        <div id="puzzle-battle-challenge-toaster"></div>
+
+        <div id="leagues-division-started-modal"></div>
+
+
+        <div id="offline-challenge-toaster" data-badge="challenges" data-badge-count="0"></div>
+
+        <div id="old-browser-modal"></div>
+
+        <link href="/bundles/app/css/sprites.client.2f051ee5.css" type="text/css" rel="stylesheet" />
+
+
+
+        <div id="sb" style="" class="nav-component " data-constant-message-unread-count-max="100" data-notifications-limit="200">
+            <div id="sb-cover" data-mobile-nav-toggle></div>
+
+            <div class="nav-action toggle close" data-mobile-nav-toggle>
+                <span class="icon-font-chess x"></span>
+            </div>
+
+            <div data-nav-top>
+
+                <a aria-label="Chess.com - Play Chess Online" class="nav-link-component nav-link-main-design chess-logo-wrapper sprite chess-logo " data-nav-link="home" data-amplitude-nav-selection="home" href="" target="_self">
+                    <span class="nav-link-text mobile-only">Home</span>
+
+
+                    <span class="navigation-badge-component" data-badge="alerts" data-badge-count="0"></span>
+                </a>
+
+                <div class="nav-panel-component" data-nav-panel="home"></div>
+
+
+                <a class="nav-link-component nav-link-main-design nav-link-top-level sprite play-top" data-amplitude-nav-selection="play" data-nav-link="play" href="" target="_self">
+                    <span class="nav-link-text">Play</span>
+                    <span class="navigation-badge-component" data-badge="games" data-badge-count="0"></span>
+                </a>
+
+
+                <div class="nav-panel-component" data-nav-panel="play" data-routes="{&quot;leaderboard&quot;:&quot;https:\/\/www.chess.com\/leaderboard&quot;,&quot;live&quot;:&quot;https:\/\/www.chess.com\/live&quot;,&quot;daily&quot;:&quot;https:\/\/www.chess.com\/play\/online\/daily&quot;,&quot;computer&quot;:&quot;https:\/\/www.chess.com\/play\/computer&quot;,&quot;playOnline&quot;:&quot;https:\/\/www.chess.com\/play\/online&quot;,&quot;playPage&quot;:&quot;https:\/\/www.chess.com\/play&quot;,&quot;playFriend&quot;:&quot;https:\/\/www.chess.com\/play\/online\/friend&quot;,&quot;puzzleBattle&quot;:&quot;https:\/\/www.chess.com\/puzzles\/battle&quot;,&quot;puzzles&quot;:&quot;https:\/\/www.chess.com\/puzzles\/rush&quot;,&quot;tournamentsPlay&quot;:&quot;https:\/\/www.chess.com\/play\/online\/tournaments&quot;,&quot;tournaments&quot;:&quot;https:\/\/www.chess.com\/tournaments&quot;,&quot;library&quot;:&quot;https:\/\/www.chess.com\/library&quot;,&quot;gameArchive&quot;:&quot;https:\/\/www.chess.com\/games\/archive&quot;,&quot;variants&quot;:&quot;https:\/\/www.chess.com\/variants&quot;}">
+                </div>
+
+                <a class="nav-link-component nav-link-main-design nav-link-top-level sprite puzzles-top" data-amplitude-nav-selection="puzzles" data-nav-link="puzzles" href="" target="_self">
+                    <span class="nav-link-text">Puzzles</span>
+                </a>
+
+
+                <div class="nav-panel-component" data-nav-panel="puzzles" data-routes="{&quot;dailyPuzzle&quot;:&quot;https:\/\/www.chess.com\/daily-chess-puzzle&quot;,&quot;drills&quot;:&quot;https:\/\/www.chess.com\/drills&quot;,&quot;endgames&quot;:&quot;https:\/\/www.chess.com\/endgames&quot;,&quot;practice&quot;:&quot;https:\/\/www.chess.com\/practice&quot;,&quot;puzzleBattle&quot;:&quot;https:\/\/www.chess.com\/puzzles\/battle&quot;,&quot;puzzlesCustom&quot;:&quot;https:\/\/www.chess.com\/puzzles\/learning&quot;,&quot;puzzlesRush&quot;:&quot;https:\/\/www.chess.com\/puzzles\/rush&quot;,&quot;puzzlesRated&quot;:&quot;https:\/\/www.chess.com\/puzzles\/rated&quot;,&quot;tactics&quot;:&quot;https:\/\/www.chess.com\/puzzles&quot;,&quot;soloChess&quot;:&quot;https:\/\/www.chess.com\/solo-chess&quot;}">
+                </div>
+
+                <a class="nav-link-component nav-link-main-design nav-link-top-level sprite learn-top" data-amplitude-nav-selection="learn" data-nav-link="learn" href="" target="_self">
+                    <span class="nav-link-text">Learn</span>
+                </a>
+
+
+                <div class="nav-panel-component" data-nav-panel="learn" data-routes="{&quot;analysis&quot;:&quot;https:\/\/www.chess.com\/analysis&quot;,&quot;classroom&quot;:&quot;https:\/\/www.chess.com\/classroom&quot;,&quot;endgames&quot;:&quot;https:\/\/www.chess.com\/endgames&quot;,&quot;insights&quot;:&quot;https:\/\/www.chess.com\/insights&quot;,&quot;lessons&quot;:&quot;https:\/\/www.chess.com\/lessons&quot;,&quot;openings&quot;:&quot;https:\/\/www.chess.com\/openings&quot;,&quot;practice&quot;:&quot;https:\/\/www.chess.com\/practice&quot;}">
+                </div>
+
+
+                <a class="nav-link-component nav-link-main-design nav-link-top-level sprite watch-top" data-amplitude-nav-selection="watch" data-nav-link="watch" href="" target="_self">
+                    <span class="nav-link-text">Watch</span>
+                </a>
+
+
+                <div class="nav-panel-component" data-nav-panel="watch" data-routes="{&quot;chessToday&quot;:&quot;https:\/\/www.chess.com\/today&quot;,&quot;computerChampionship&quot;:&quot;https:\/\/www.chess.com\/computer-chess-championship&quot;,&quot;events&quot;:&quot;https:\/\/www.chess.com\/events&quot;,&quot;news&quot;:&quot;https:\/\/www.chess.com\/news&quot;,&quot;proChessLeague&quot;:&quot;http:\/\/www.prochessleague.com&quot;,&quot;streamers&quot;:&quot;https:\/\/www.chess.com\/streamers&quot;}">
+                </div>
+
+                <a class="nav-link-component nav-link-main-design nav-link-top-level sprite news-top" data-amplitude-nav-selection="news" data-nav-link="news" href="" target="_self">
+                    <span class="nav-link-text">News</span>
+                </a>
+
+
+                <div class="nav-panel-component" data-nav-panel="news" data-routes="{&quot;articles&quot;:&quot;https:\/\/www.chess.com\/articles&quot;,&quot;chessToday&quot;:&quot;https:\/\/www.chess.com\/today&quot;,&quot;liveRankings&quot;:&quot;https:\/\/www.chess.com\/ratings&quot;,&quot;news&quot;:&quot;https:\/\/www.chess.com\/news&quot;,&quot;topPlayers&quot;:&quot;https:\/\/www.chess.com\/players&quot;}">
+                </div>
+
+                <a class="nav-link-component nav-link-main-design nav-link-top-level sprite social-page" data-amplitude-nav-selection="social" data-nav-link="social" href="" target="_self">
+                    <span class="nav-link-text">Social</span>
+                    <span class="navigation-badge-component" data-badge="chatMessages" data-badge-count="0"></span>
+                </a>
+
+
+                <div class="nav-panel-component" data-nav-panel="social" data-routes="{&quot;articles&quot;:&quot;https:\/\/www.chess.com\/articles&quot;,&quot;news&quot;:&quot;https:\/\/www.chess.com\/news&quot;,&quot;forums&quot;:&quot;https:\/\/www.chess.com\/forum&quot;,&quot;blogs&quot;:&quot;https:\/\/www.chess.com\/blogs&quot;,&quot;clubs&quot;:&quot;https:\/\/www.chess.com\/clubs&quot;,&quot;friends&quot;:&quot;https:\/\/www.chess.com\/friends&quot;,&quot;members&quot;:&quot;https:\/\/www.chess.com\/members&quot;,&quot;coaches&quot;:&quot;https:\/\/www.chess.com\/coaches&quot;}">
+                </div>
+
+                <button aria-label="More" class="nav-link-component nav-link-main-design nav-link-button nav-link-top-level sprite more-top" data-amplitude-nav-selection="more" data-nav-link="more">
+                    <span class="nav-link-text">More</span>
+                </button>
+
+
+                <div class="nav-panel-component" data-nav-panel="more" data-routes="{&quot;computerChampionship&quot;:&quot;https:\/\/www.chess.com\/computer-chess-championship&quot;,&quot;explorer&quot;:&quot;https:\/\/www.chess.com\/explorer&quot;,&quot;library&quot;:&quot;https:\/\/www.chess.com\/library&quot;,&quot;masterGames&quot;:&quot;https:\/\/www.chess.com\/games&quot;,&quot;mobileApps&quot;:&quot;https:\/\/www.chess.com\/play\/apps&quot;,&quot;resourcesPage&quot;:&quot;https:\/\/www.chess.com\/resources&quot;,&quot;rules&quot;:&quot;https:\/\/www.chess.com\/learn-how-to-play-chess&quot;,&quot;soloChess&quot;:&quot;https:\/\/www.chess.com\/solo-chess&quot;,&quot;terms&quot;:&quot;https:\/\/www.chess.com\/terms&quot;,&quot;verified&quot;:&quot;https:\/\/www.chess.com\/verified&quot;,&quot;videos&quot;:&quot;https:\/\/www.chess.com\/videos&quot;,&quot;vision&quot;:&quot;https:\/\/www.chess.com\/vision&quot;,&quot;voteChess&quot;:&quot;https:\/\/www.chess.com\/votechess&quot;}">
+                </div>
+
+                <a data-amplitude-nav-selection="freetrial" href="" target="_self" class="nav-link-component nav-link-main-design trial nav-link-top-level sprite diamond-top">
+                    <span class="nav-link-text">Free Trial</span>
+                </a>
+
+                <div class="nav-link-wrapper">
+                    <a href="" target="_self" class="nav-link-component nav-link-main-design nav-link-top-level nav-search-icon" aria-label="Search" data-amplitude-nav-selection="subnav-search" data-nav-action-search data-nav-toggle-search-box>
+                        <div class="nav-toggle-search-box">
+                            <span class="search-icon-font icon-font-chess magnifying-glass" id="search"></span>
+                        </div>
+                    </a>
+
+                    <div class="nav-popover nav-search" data-nav-popover-search>
+                        <div class="arrow"></div>
+
+                        <input class="ui_v5-input-component ui_v5-input-dark nav-autofill-search" type="text" placeholder="Search" autocomplete="off" readonly="readonly" data-autofocus=1 />
+                    </div>
+                </div>
+
+                <div class="nav-search-form">
+                    <input class="ui_v5-input-component ui_v5-input-dark nav-autofill-search" type="text" placeholder="Search" autocomplete="off" readonly="readonly" data-force-theme="dark" />
+                </div>
+
+            </div>
+            <div class="nav-menu-area">
+
+
+                <button aria-label="Light/Dark Interface" class="nav-action ui-mode" data-amplitude-nav-selection="subnav-uimode" data-nav-ui-mode type="button">
+                    <span class="icon-font-chess darklight"></span>
+
+                    <span class="nav-link-text">
+                        <span class="light">Light UI</span>
+                        <span class="dark">Dark UI</span>
+                    </span>
+                </button>
+
+                <button aria-label="Collapse/Expand Navigation" class="nav-action resize" data-amplitude-nav-selection="subnav-collapseexpand" data-nav-resize type="button">
+                    <div class="collapse">
+                        <span class="icon-font-chess nav-collapsed"></span>
+                    </div>
+
+                    <div class="expand" v-tooltip="collapseTooltip" id="resize">
+                        <span class="icon-font-chess nav-expanded"></span>
+                    </div>
+
+                    <span class="nav-link-text">Collapse</span>
+                </button>
+
+                <a data-nav-settings data-amplitude-nav-selection="subnav-settings" class="nav-action link has-popover settings" href="" target="_self">
+                    <span class="icon-font-chess circle-gearwheel"></span>
+
+                    <span class="nav-link-text">Settings</span>
+                </a>
+
+                <div class="nav-popover dark settings">
+                    <div class="arrow"></div>
+
+                    <a data-amplitude-nav-selection="subnav-settings-allsettings" class="btn-link" href="" target="_self">
+                        <span class="icon-font-chess circle-gearwheel"></span>
+
+                        <span class="title">All Settings</span>
+                    </a>
+
+                    <button type="button" class="btn-link logout" data-amplitude-nav-selection="subnav-settings-logout" data-logout-link>
+                        <span class="icon-font-chess exit"></span>
+
+                        <span class="title">Log Out</span>
+                    </button>
+                </div>
+
+                <button type="button" aria-label="Help" class="nav-action has-popover help" data-amplitude-nav-selection="subnav-help" type="button">
+                    <span class="icon-font-chess circle-question"></span>
+
+                    <span class="nav-link-text">Help</span>
+                </button>
+
+                <div class="dark nav-popover help">
+                    <div class="arrow"></div>
+
+                    <button type="button" class="btn-link help-scout" data-amplitude-nav-selection="subnav-help-askaquestion">
+                        <span class="icon-font-chess circle-question"></span>
+
+                        <span class="title">Ask a Question</span>
+                    </button>
+
+                    <a data-amplitude-nav-selection="subnav-help-reportabuse" class="btn-link" rel="noopener" href="https://support.chess.com/collection/136-community-safety" target="_blank">
+                        <span class="icon-font-chess circle-block"></span>
+
+                        <span class="title">Report Abuse</span>
+                    </a>
+
+                    <button type="button" class="btn-link user-snap" data-amplitude-nav-selection="subnav-help-makeasuggestion">
+                        <span class="icon-font-chess lightbulb"></span>
+
+                        <span class="title">Make a Suggestion</span>
+                    </button>
+
+                    <a data-amplitude-nav-selection="subnav-help-billingissues" class="btn-link" rel="noopener" href="https://support.chess.com/category/135-membership-and-billing" target="_blank">
+                        <span class="icon-font-chess card"></span>
+
+                        <span class="title">Billing Issues</span>
+                    </a>
+
+                    <button type="button" class="btn-link user-snap" data-amplitude-nav-selection="subnav-help-reportabug">
+                        <span class="icon-font-chess bug"></span>
+
+                        <span class="title">Report a Bug</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="opened-chats-container" data-private-chats-container></div>
+
+
+    <div id="board-layout-main" class="board-layout-main">
+        <div id="board-layout-player-top" class="board-layout-player board-layout-top">
+            <div id="player-top"></div>
+        </div>
+        <div id="board-layout-chessboard" class="board-layout-chessboard board-board">
+            <div id="board-layout-evaluation" class="board-layout-evaluation">
+                <div id="evaluation"></div>
+            </div>
+            <chess-board id="board" class="board"></chess-board>
+
+            <div>
+                <div id="modals-general"></div>
+                <div id="modal-settings"></div>
+                <div id="modal-upgrade"></div>
+                <div id="modal-first-time"></div>
+                <div id="modal-coach"></div>
+                <div id="add-to-library-modal"></div>
+                <div id="share-modal"></div>
+            </div>
+            <div id="board-layout-controls" class="board-layout-controls">
+                <span id="board-controls-settings" class="board-layout-icon icon-font-chess circle-gearwheel"></span>
+                <span id="board-controls-flip" class="board-layout-icon icon-font-chess repeat"></span>
+
+                <span id="board-controls-emoji-palette" class="board-layout-icon icon-font-chess smileyadd"></span>
+
+                <div id="captured-pieces-vertical"></div>
+                <span class="board-layout-icon icon-font-chess resize"></span>
+            </div>
+            <div id="vote-info-modal"></div>
+        </div>
+        <div id="board-layout-player-bottom" class="board-layout-player board-layout-bottom">
+            <div id="player-bottom"></div>
+        </div>
+        <div id="board-layout-analysis" class="board-layout-analysis">
+            <div id="charts"></div>
+        </div>
+    </div>
+
+    <div id="board-layout-sidebar" class="board-layout-sidebar">
+        <div id="game-list"></div>
+        <div id="sidebar"></div>
+    </div>
+
+
+
+
+
+    <div id="share-menu"></div>
+
+
+    <script>
+        window.PubSub = {};
+        window.PubSub.options = {
+            environment: 'prod',
+            url: {
+                base: '',
+                baseWss: '',
+                chat: '',
+                classroom: '',
+                insights: '',
+                invitations: '',
+                matcher: '',
+                game: '',
+                play: '',
+                presence: '',
+                pubsub: '',
+                ratings: '',
+                reactions: '',
+                settings: '',
+                topplayers: '',
+                users: '',
+            },
+        };
+    </script>
+
+
+
+    <div id="widget-alert-flash" class="alerts-container">
+    </div>
+
+
+
+
+    <link href="/bundles/app/css/analysis-vendors__beta.client.bd38930b.css" type="text/css" rel="stylesheet" />
+    <link href="/bundles/app/css/analysis__beta.client.4aa8f6a9.css" type="text/css" rel="stylesheet" />
+
+
+
+    <script type="text/javascript">
+        var Config = {
+            "cometd.url": "/cometd",
+            "domain.main": "//www.chess.com",
+            "domain.static": "//"+document.domain,
+            "domain.files": "//files.chesscomfiles.com",
+            "domain.live": "//live.chess.com",
+            "domain.live2": "//live2.chess.com",
+            "domain.liveh2": "//liveh2.chess.com",
+            "domain.live3": "//live3.chess.com",
+            "domain.voice": "rtmp://voice.chess.com",
+            "domain.cssjs": "//www.chess.com",
+            "domain.images": "//images.chesscomfiles.com",
+            "domain.avatars": "//avatars.chesscomfiles.com",
+            "domain.baseUrl": "",
+            "isFacebookCanvas": false,
+            "facebookId": "429665630433565",
+            "pathToEngineWorker": "/bundles/app/js/vendor/jschessengine/stockfish.6983901b.js",
+            "pathToEngineWorkerAlt": "/bundles/app/js/engine/stockfish.1de0d633.js",
+            "pathToWasmEngine": "/bundles/app/js/vendor/jschessengine/stockfish.6103b42f.bin",
+            "pathToNonWasmEngine": "/bundles/app/js/vendor/jschessengine/stockfish.asm.1abfa10c.js",
+            "pathToKomodoWorker": "/bundles/app/js/vendor/jschessengine/komodo.9ea31da2.js",
+            "pathToWasmKomodo": "/bundles/app/js/vendor/jschessengine/komodo.765d36d5.bin",
+            "pathToNonWasmKomodo": "/bundles/app/js/vendor/jschessengine/komodo.asm.b6f18c99.js",
+            "pathToExplanationEngineWorker": "/bundles/app/js/vendor/explanation-engine/explanation-engine.c8f35761.js",
+            "pathToWasmExplanationEngine": "/bundles/app/js/vendor/explanation-engine/explanation-engine.271e1d4c.wasm",
+            "pathToEcoJson": "/bundles/app/js/engine/eco.e2992d83.json",
+            "pathToBook": "/bundles/app/js/vendor/jschessengine/books/book.c30917a9.json",
+            "pathToBookSmall": "/bundles/app/js/engine/book-small.12a4e48e.json",
+            "pathToWebGL": "/bundles/app/js/vendor/webgl_three.61269fce.js",
+            "pathToGamePreviewLoader": "/bundles/web/images/game-preview-loading.8677fb94.png",
+            "pathToPersonalityBooks": {
+                "aggressive": "/bundles/app/js/vendor/jschessengine/books/personalities/aggressive.50a9b452.bin",
+                "balanced": "/bundles/app/js/vendor/jschessengine/books/personalities/balanced.71d69282.bin",
+                "beginner": "/bundles/app/js/vendor/jschessengine/books/personalities/beginner.f122c7c5.bin",
+                "classical": "/bundles/app/js/vendor/jschessengine/books/personalities/classical.2e31ad51.bin",
+                "f-pawner": "/bundles/app/js/vendor/jschessengine/books/personalities/f-pawner.bb8a15f1.bin",
+                "fischer": "/bundles/app/js/vendor/jschessengine/books/personalities/fischer.c93e412d.bin",
+                "gambit": "/bundles/app/js/vendor/jschessengine/books/personalities/gambit.3ef59ed2.bin",
+                "indian": "/bundles/app/js/vendor/jschessengine/books/personalities/indian.8e8f8dd6.bin",
+                "nakamura": "/bundles/app/js/vendor/jschessengine/books/personalities/nakamura.1b408716.bin",
+                "offbeat": "/bundles/app/js/vendor/jschessengine/books/personalities/offbeat.c125e5bf.bin",
+                "positional": "/bundles/app/js/vendor/jschessengine/books/personalities/positional.988b37b5.bin",
+                "quick_queen": "/bundles/app/js/vendor/jschessengine/books/personalities/quick_queen.523ee0a4.bin",
+                "rensch": "/bundles/app/js/vendor/jschessengine/books/personalities/rensch.f0d14299.bin",
+                "winger": "/bundles/app/js/vendor/jschessengine/books/personalities/winger.77d88765.bin"
+            },
+            "threadedEnginePaths": {
+                "stockfish": {
+                    "multiThreaded": {
+                        "loader": "/bundles/app/js/engine/stockfish-nnue-15.0037fad7.js",
+                        "engine": "/bundles/app/js/engine/stockfish-nnue-15.3f2dc2f6.wasm",
+                        "nnue": "/bundles/app/js/engine/nn-6877cd24400e.6f08b21c.nnue",
+                    },
+                    "singleThreaded": {
+                        "loader": "/bundles/app/js/engine/stockfish-single.830cf9cc.js",
+                        "engine": "/bundles/app/js/engine/stockfish-single.8ffa2b70.wasm",
+                    },
+                    "asm": "/bundles/app/js/engine/stockfish.asm.16fa8540.js",
+                },
+            },
+            "oldThemes": false,
+            "isLive": false,
+            "isPlay": false,
+            "isStaff": false,
+            "noAvatar": '/bundles/web/images/user-image.007dad08.svg',
+            "wdlJsonModel": '/bundles/web/wdl/model.json',
+            "wdlWeights": '/bundles/web/wdl/group1-shard1of1.bin',
+            "ad.noAds": false,
+            "ad.disabledAds": []
+        };
+
+        Config.adCustomPath = '';
+
+        Config.pathToTinyMCE = "/bundles/app/js/tinymce-lazy-beta.client.4b868155.js",
+
+            Config.pathToFCMWorker = "/bundles/app/js/fcm-worker.client.4c8963ec.js",
+
+
+
+            Config.pathToDiagramViewerCSS = "/bundles/app/css/diagram-viewer.client.a485be7d.css",
+            Config.pathToDiagramViewerJS = "/bundles/app/js/diagram-viewer.client.5e46191d.js",
+
+            window.__CHESSCOM_RTL__ = false;
+
+        //<![CDATA[
+        context = {
+            "userId": "userId",
+            "user": {
+                "id": 33,
+                "hasEmail": true,
+                "autoTrackContent": true,
+                "username": "chesscom",
+                "avatarUrl": "https:\/\/www.chess.com\/bundles\/web\/images\/noavatar_l.84a92436.gif",
+                "settingsAvatarUrl": "https:\/\/www.chess.com\/bundles\/web\/images\/noavatar_l.84a92436.gif",
+                "avatarLargeUrl": "https:\/\/www.chess.com\/bundles\/web\/images\/noavatar_l.84a92436.gif",
+                "chessTitle": null,
+                "country": {
+                    "code": "US",
+                    "id": 1,
+                    "name": "United States"
+                },
+                "membershipCode": "basic",
+                "rating": 400,
+                "cohort": "",
+                "flairCode": "nothing",
+                "membershipLevel": 10,
+                "isActivated": false,
+                "isRecentlyRegistered": true,
+                "isEnabled": true,
+                "isGuest": false,
+                "isBasic": true,
+                "isContentHidden": true,
+                "isPremium": false,
+                "isGold": false,
+                "isDiamond": false,
+                "isModerator": false,
+                "isPlatinum": false,
+                "isStaff": false,
+                "hasAccount": true,
+                "isNewlyRegistered": true,
+                "optedBeta": false,
+                "lastLoginDate": -1,
+                "timezone": "Unknown",
+                "archiveView": "grid",
+                "fairPlayAgree": false,
+                "features": {
+                    "usersettings": true,
+                    "themes": true
+                },
+                "isImpersonating": false,
+                "eligibleFirstTrial": true,
+                "registerDate": -1,
+                "safeMode": false,
+                "uuid": "de18bd80-fc78-11db-8021-000000000000",
+                "allowBrowserNotifications": [],
+                "freeDiamondCampaign": {
+                    "showGiftReceivedModal": false,
+                    "showGiftExpireModal": false
+                },
+                "optedLeagues": true
+            },
+            "diagramSettings": {
+                "board": "green",
+                "piece": "neo"
+            },
+            "i18n": {
+                "locale": "en_US",
+                "contentLanguage": "only_user",
+                "mobile": {
+                    "computer": "Computer",
+                    "daily_chess": "Daily Chess",
+                    "tactics": "Tactics",
+                    "lessons": "Lessons",
+                    "videos": "Videos",
+                    "articles": "Articles",
+                    "forums": "Forums",
+                    "friends": "Friends",
+                    "messages": "Messages",
+                    "stats": "Stats",
+                    "settings": "Settings",
+                    "trophies": "Trophies"
+                }
+            },
+            "csrf": {
+                "token": "0000000000000000000000000000000000000000000",
+                "login": "0000000000000000000000000000000000000000000",
+                "logout": "0000000000000000000000000000000000000000000"
+            },
+            "amplitudeKey": "00000000000000000000000000000000",
+            "iterableKey": "00000000000000000000000000000000",
+            "adyen": {
+                "environment": "live",
+                "integrity": "sha256-00000000000000000000000000000000000000000000000000000000000000000",
+                "clientKey": "live_00000000000000000000000000000000",
+                "key": "0",
+                "originKey": "0",
+                "sdk": "https:\/\/checkoutshopper-live.adyen.com\/checkoutshopper\/sdk\/3.4.0\/adyen.js"
+            },
+            "iterableMuteApiCallsFeature": false
+        };
+        //]]>
+
+        context.version = '20221104060255';
+        context.branch = 'master';
+        context.commit = '21312eeffaf287176a35302bac88f09de6199335';
+        context.requestId = 'c020106f8f6184ad2a2905b7772670d1';
+        context.server = 'web119.chess.com';
+        context.locale = 'en_US';
+        context.environment = 'prod';
+        context.cookies = {
+            app: '',
+        };
+
+        context.ip = '8.8.8.8';
+        context.chessboardBeta = false;
+        context.route = 'web_analysis_board_editor';
+    </script>
+
+    <div id='cdm-zone-end'></div>
+
+    <script language="javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(registrations => {
+                registrations.forEach(registration => {
+                    if (registration.active.scriptURL.includes('/service-worker.client.js')) {
+                        registration.unregister();
+                    }
+                });
+            }).catch(() => {});
+        }
+    </script>
+
+
+    <script defer src="/bundles/app/js/client/es6-translations/es6-translation.en_US.4e0034fd.js"></script>
+
+    <script src="/bundles/app/js/vue.dll.6efcd5b2.js"></script>
+
+
+
+
+    <script defer src="/bundles/app/js/global.client.46554dd4.js">
+    </script>
+
+
+
+
+
+    <script data-src="/bundles/app/js/checkmate.client.9213ef31.js">
+    </script>
+
+
+    <script defer src="/bundles/app/js/sentry.client.4bed3cf2.js">
+    </script>
+
+
+
+
+
+    <script defer src="/bundles/app/js/pubsub-connection.client.c9aca38b.js">
+    </script>
+
+
+
+
+
+    <script defer data-src="/bundles/app/js/chat-next.client.4a7ab7e5.js">
+    </script>
+
+
+    <script defer data-src="/bundles/app/js/client-metrics.client.7624c5a5.js">
+    </script>
+
+
+    <script type="text/javascript">
+
+        window.TinymceConfig = {
+            editor_options: {
+                paste_as_text: true,
+                debounce: false,
+                baseURL: 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta',
+                pathToTinyMCE: '/bundles/app/js/tinymce-lazy-beta.client.4b868155.js',
+                theme: 'silver',
+                theme_url: '/bundles/app/js/vendor/tinymce-beta/themes/silver/theme.min.237b6e15.js',
+                content_css: '/bundles/app/css/tinymce-content.client.944a8a07.css',
+                skin: 'oxide',
+                skin_url: '/bundles/app/js/vendor/tinymce-beta/skins/ui/oxide',
+                extended_valid_elements: 'img[id|src|srcset|style|title|class|alt|width|height]',
+                external_plugins: {
+
+                    'chessdiagram': 'https://www.chess.com/bundles/app/js/tinymce-beta/plugins/chessdiagram/plugin.js',
+                    'imageuploader': 'https://www.chess.com/bundles/app/js/tinymce-beta/plugins/imageuploader.js',
+                    'smileys': 'https://www.chess.com/bundles/app/js/tinymce-beta/plugins/smileys.js',
+                    'advlist': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/advlist/plugin.min.73cb9101.js',
+                    'autolink': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/autolink/plugin.min.04d23487.js',
+                    'link': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/link/plugin.min.212dc6a1.js',
+                    'lists': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/lists/plugin.min.cbf51c9b.js',
+                    'charmap': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/charmap/plugin.min.36a4c56f.js',
+                    'print': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/print/plugin.min.4a9132b4.js',
+                    'preview': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/preview/plugin.min.e26941c4.js',
+                    'hr': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/hr/plugin.min.867b7842.js',
+                    'anchor': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/anchor/plugin.min.1b78f9c5.js',
+                    'pagebreak': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/pagebreak/plugin.min.1b620f40.js',
+                    'spellchecker': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/spellchecker/plugin.min.0cf9efdf.js',
+                    'visualblocks': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/visualblocks/plugin.min.36e78fa4.js',
+                    'visualchars': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/visualchars/plugin.min.372771ec.js',
+                    'code': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/code/plugin.min.9b57a076.js',
+                    'fullscreen': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/fullscreen/plugin.min.d7af0ef1.js',
+                    'insertdatetime': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/insertdatetime/plugin.min.49d81e24.js',
+                    'media': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/media/plugin.min.bd130046.js',
+                    'nonbreaking': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/nonbreaking/plugin.min.b35f0bd7.js',
+                    'noneditable': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/noneditable/plugin.min.4ffbb89a.js',
+                    'table': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/table/plugin.min.5dc062b2.js',
+                    'directionality': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/directionality/plugin.min.d1a923c8.js',
+                    'template': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/template/plugin.min.c0e5f3a7.js',
+                    'textcolor': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/textcolor/plugin.min.4cffa84c.js',
+                    'paste': 'https://www.chess.com/bundles/app/js/vendor/tinymce-beta/plugins/paste/plugin.min.3c417f1d.js',
+
+                }
+            },
+            theme_options: {
+                "browser_spellcheck": true,
+                "branding": false,
+                "plugins": ["autolink chessdiagram imageuploader smileys media spellchecker noneditable textcolor link lists hr"],
+                "menubar": false,
+                "toolbar1": "chessdiagram imageuploader smileys media bold italic forecolor fontsizeselect bullist numlist hr link unlink",
+                "theme": "silver",
+                "skin": "oxide",
+                "width": "100%",
+                "height": "230,",
+                "elementpath": false,
+                "contextmenu": false,
+                "min_height": 130,
+                "mobile": {
+                    "toolbar_mode": "wrap"
+                },
+                "auto_convert_smileys": true,
+                "smileys": [
+                    [{
+                        "shortcut": ":X",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/angry.png",
+                        "title": "angry"
+                    }, {
+                        "shortcut": ":-\/",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/meh.png",
+                        "title": "meh"
+                    }, {
+                        "shortcut": ":|",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/frustrated.png",
+                        "title": "frustrated"
+                    }, {
+                        "shortcut": ":)",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/happy.png",
+                        "title": "happy"
+                    }, {
+                        "shortcut": ":D",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/grin.png",
+                        "title": "grin"
+                    }, {
+                        "shortcut": ">:)",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/evil.png",
+                        "title": "evil"
+                    }, {
+                        "shortcut": ":((",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/cry.png",
+                        "title": "cry"
+                    }, {
+                        "shortcut": ":S",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/nervous.png",
+                        "title": "nervous"
+                    }, {
+                        "shortcut": ":(",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/sad.png",
+                        "title": "sad"
+                    }, {
+                        "shortcut": ":@",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/shock.png",
+                        "title": "shock"
+                    }, {
+                        "shortcut": ":O",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/surprise.png",
+                        "title": "surprise"
+                    }, {
+                        "shortcut": ";(",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/tear.png",
+                        "title": "tear"
+                    }, {
+                        "shortcut": ":P",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/tongue.png",
+                        "title": "tongue"
+                    }, {
+                        "shortcut": ";)",
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/wink.png",
+                        "title": "wink"
+                    }],
+                    [{
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/archive.png",
+                        "title": "archive"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/articles.png",
+                        "title": "articles"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/blitz.png",
+                        "title": "blitz"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/blogs.png",
+                        "title": "blogs"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/bullet.png",
+                        "title": "bullet"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/castle.png",
+                        "title": "castle"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/chessbook.png",
+                        "title": "chessbook"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/clock.png",
+                        "title": "clock"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/clubs.png",
+                        "title": "clubs"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/coaches.png",
+                        "title": "coaches"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/computer.png",
+                        "title": "computer"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/daily.png",
+                        "title": "daily"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/fork.png",
+                        "title": "fork"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/videos.png",
+                        "title": "videos"
+                    }],
+                    [{
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/devices.png",
+                        "title": "devices"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/diamond.png",
+                        "title": "diamond"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/draw.png",
+                        "title": "draw"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/explorer.png",
+                        "title": "explorer"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/fish.png",
+                        "title": "fish"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/forums.png",
+                        "title": "forums"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/friends.png",
+                        "title": "friends"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/gold.png",
+                        "title": "gold"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/lessons.png",
+                        "title": "lessons"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/live.png",
+                        "title": "live"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/messages.png",
+                        "title": "messages"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/news.png",
+                        "title": "news"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/openings.png",
+                        "title": "openings"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/peshka.png",
+                        "title": "peshka"
+                    }],
+                    [{
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/pin.png",
+                        "title": "pin"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/platinum.png",
+                        "title": "platinum"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/playhand.png",
+                        "title": "playhand"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/resign.png",
+                        "title": "resign"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/settings.png",
+                        "title": "settings"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/skewer.png",
+                        "title": "skewer"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/stats.png",
+                        "title": "stats"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/tactics.png",
+                        "title": "tactics"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/themes.png",
+                        "title": "themes"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/thumbdown.png",
+                        "title": "thumbdown"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/thumbup.png",
+                        "title": "thumbup"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/tournaments.png",
+                        "title": "tournaments"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/trophies.png",
+                        "title": "trophies"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/votechess.png",
+                        "title": "votechess"
+                    }],
+                    [{
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/half.png",
+                        "title": "half"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/0-0-0.png",
+                        "title": "0-0-0"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/0-0.png",
+                        "title": "0-0"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/chesspawn.png",
+                        "title": "chesspawn"
+                    }],
+                    [{
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/bp.png",
+                        "title": "bp"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/bb.png",
+                        "title": "bb"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/bn.png",
+                        "title": "bn"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/br.png",
+                        "title": "br"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/bq.png",
+                        "title": "bq"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/bk.png",
+                        "title": "bk"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/wp.png",
+                        "title": "wp"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/wb.png",
+                        "title": "wb"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/wn.png",
+                        "title": "wn"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/wr.png",
+                        "title": "wr"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/wq.png",
+                        "title": "wq"
+                    }, {
+                        "url": "\/bundles\/web\/images\/icons\/smileys\/2x\/wk.png",
+                        "title": "wk"
+                    }]
+                ],
+                "theme_advanced_toolbar_location": "top",
+                "theme_advanced_path": false,
+                "theme_advanced_statusbar_location": "bottom",
+                "theme_advanced_resize_horizontal": false,
+                "theme_advanced_resizing": true,
+                "theme_advanced_resizing_use_cookie": false,
+                "font_formats": "Apple System=-apple-system, BlinkMacSystemFont;Arial=arial,helvetica,sans-serif;Courier New=courier new,courier;Helvetica=helvetica;Tahoma=tahoma,arial,helvetica,sans-serif;Times New Roman=times new roman,times;Segoe UI=\"Segoe UI\";",
+                "relative_urls": false,
+                "remove_script_host": false,
+                "convert_urls": false,
+                "content_css": "asset[bundles\/app\/css\/tinymce-content.client.css]",
+                "paste_webkit_styles": "all",
+                "fontsize_formats": "8px 10px 11px 12px 14px 18px 24px 36px",
+                "extended_valid_elements": "img[id|src|srcset|style|title|class|alt|width|height]"
+            }
+        };
+    </script>
+
+
+
+
+
+    <script defer src="/bundles/app/js/board-layout-new.client.ab48d915.js">
+    </script>
+
+
+
+
+    <script>
+        window.chesscom = window.chesscom || {};
+        window.chesscom.analysis = {
+            canBookmark: true,
+            canConfigure: false,
+            canCreate: true,
+            canRetry: true,
+            canViewCoachCommentary: true,
+            canViewCompleteBasicAnalysis: false,
+            gameId: '',
+            gameType: '',
+            extraGameData: JSON.parse("{\"retriesLocked\":false}"),
+            fen: '',
+            locked: false,
+            libraryLocked: false,
+            libraryCollectionGames: JSON.parse('null'),
+            librarySelectedCollectionGame: '',
+            pgn: '',
+            savedAnalysisId: '',
+            url: '',
+            userDetails: JSON.parse('{}'),
+            ceeSupportedLocales: ["en_US", "es_ES", "fr_FR", "de_DE", "ru_RU", "pt_PT"],
+        };
+
+        window.chesscom.clientMetricsDomain = 'https://client-metrics.chess.com';
+
+
+
+
+        window.chesscom.features = (window.chesscom.features || []).concat([, 'analysis_cee_cutoff', 'analysis_speech_from_cee', 'game_analysis_accept_tactics', 'analysis_staging_shadow_request', 'analysis_cloud_server', 'ceac_ceem_lang_option', 'new_max_analysis_endpoint', 'analysis_speech_from_cee_v2']);
+    </script>
+
+
+
+    <script defer src="/bundles/app/js/analysis-vendors__beta.client.6f01fc79.js"></script>
+    <script defer src="/bundles/app/js/analysis__beta.client.edb8c1f7.js"></script>
+
+
+
+
+
+    <script defer src="/bundles/app/js/navigation.client.d08f2be5.js">
+    </script>
+
+
+
+
+
+    <div id="checkmate"></div>
+    <div id="notification-toasters"></div>
+
+    <div id="toaster-center"></div>
+
+    <div id="board-popover"></div>
+    <div id="confirm-popover"></div>
+    <div id="confirm-popover-inline"></div>
+    <div id="cookie-banner"></div>
+    <div id="form-datepicker"></div>
+    <div id="language-picker-modal"></div>
+    <div id="message-popover"></div>
+    <div id="modal-video"></div>
+    <div id="trophy-popover"></div>
+    <div id="user-popover"></div>
+    <div id="notifications-request" username="chesscom">
+    </div>
+
+
+
+    <div id="guest-modal"></div>
+</body>
+
+</html>
